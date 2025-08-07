@@ -5,7 +5,7 @@
 
 <!-- Glitchy banner -->
 <p align="center">
-  <img src="https://github.com/Redooyyy/Redooyyy/blob/main/assets/glitch-banner.gif" width="600px" />
+  <img src="https://github.com/Redooyyy/Redooyyy/blob/main/assets/glitch-banner.gif" alt = " " width="600px" />
 </p>
 
 <h1 align="center">Hey I'm Redoy :) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" /></h1>
