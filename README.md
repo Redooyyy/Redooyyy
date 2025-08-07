@@ -1,6 +1,6 @@
 <!-- Typing animation -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=Backend+Engineer+in+the+Making;Competitive+Coding+Machine;Flutter+UI+Alchemist;Poet+of+Logic" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+Full+Stack+Developer;Competitive+Coding;Flutter+UI;A+learner+who's+still+learning+ :) ;" alt="Typing SVG" />
 </p>
 
 <!-- Glitchy banner -->
@@ -38,7 +38,7 @@
 
 ---
 
-### 🧬 Code Flow Animation
+### 🧬 Code Flow
 <p align="center">
   <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt = " " width="500px" />
 </p>
