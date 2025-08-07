@@ -1,3 +1,19 @@
+<div align="center" style="
+  background: rgba(0, 247, 255, 0.05);
+  border: 2px solid rgba(0, 247, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(0, 247, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  width: 99%;
+  margin: auto;
+">
+
+
+
+
+
 <!-- Typing animation -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+Full+Stack+Developer;Competitive+Programming;Flutter+UI;A+learner+who's+still+learning" alt="Typing SVG" />
@@ -65,3 +81,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Visitors&color=00F7FF&style=flat-square" />
 </p>
+
+
+
+</div>
