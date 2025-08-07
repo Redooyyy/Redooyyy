@@ -1,12 +1,67 @@
+<!-- Typing animation -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=Backend+Engineer+in+the+Making;Competitive+Coding+Machine;Flutter+UI+Alchemist;Poet+of+Logic" alt="Typing SVG" />
+</p>
 
-## 🌐 Socials:
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/fakereo_38120) [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/redoy.995155) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ig_reeoo) [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white)](https://pinterest.com/fakereeooo) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:fakereeooo@gmail.com) 
+<!-- Glitchy banner -->
+<p align="center">
+  <img src="https://github.com/Redooyyy/Redooyyy/blob/main/assets/glitch-banner.gif" width="600px" />
+</p>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Redooyyy&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Redooyyy&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Redooyyy&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<h1 align="center">Redooyyy :) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" /></h1>
+<p align="center"><i>Crafting backend spells, decoding algorithms, and sketching emotions in pixels.</i></p>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+---
+
+### 🧠 Tech Arsenal
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,dart,flutter,nodejs,express,firebase,neovim,linux,git" />
+</p>
+
+---
+
+### 🧩 Featured Builds
+| Project | Description |
+|--------|-------------|
+| 🔥 `neovim-snippets` | Competitive programming macros with LuaSnip |
+| 📱 `flutter-heatmap` | Real-time heatmap widget with dynamic logic |
+| 🧠 `zsh-git-aliases` | Streamlined Git workflows with custom aliases |
+
+---
+
+### 📈 GitHub Metrics
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Redooyyy&theme=transparent&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Redooyyy&layout=compact&theme=transparent&hide_border=true" />
+</p>
+
+---
+
+### 🧬 Code Flow Animation
+<p align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" width="500px" />
+</p>
+
+---
+
+### 📝 Poetic Bytes
+> “I write in silence,  
+> where logic meets longing—  
+> and every bug is a metaphor.”
+
+---
+
+### 🌐 Connect with Me
+<p align="center">
+  <a href="https://www.linkedin.com/in/Redooyyy"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" /></a>
+  <a href="https://www.facebook.com/Redooyyy"><img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white&style=for-the-badge" /></a>
+  <a href="https://discordapp.com/users/Redooyyy"><img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge" /></a>
+</p>
+
+---
+
+### 🌀 Visitor Counter
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Visitors&color=00F7FF&style=flat-square" />
+</p>
