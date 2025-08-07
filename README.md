@@ -8,7 +8,7 @@
   <img src="https://github.com/Redooyyy/Redooyyy/blob/main/assets/glitch-banner.gif" width="600px" />
 </p>
 
-<h1 align="center">Redooyyy :) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" /></h1>
+<h1 align="center">Hey I'm Redoy :) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" /></h1>
 <p align="center"><i>Crafting backend spells, decoding algorithms, and sketching emotions in pixels.</i></p>
 
 ---
@@ -40,7 +40,7 @@
 
 ### 🧬 Code Flow Animation
 <p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" width="500px" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt = " " width="500px" />
 </p>
 
 ---
