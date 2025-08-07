@@ -1,14 +1,4 @@
-<div align="center" style="
-  background: rgba(0, 247, 255, 0.05);
-  border: 2px solid rgba(0, 247, 255, 0.2);
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 4px 30px rgba(0, 247, 255, 0.1);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
-  width: 99%;
-  margin: auto;
-">
+
 
 <!-- Typing animation -->
 <p align="center">
@@ -77,5 +67,3 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Visitors&color=00F7FF&style=flat-square" />
 </p>
-
-</div>
