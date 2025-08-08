@@ -42,7 +42,7 @@
 
 ### 🧬 Code Flow
 <p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="Code Flow Animation" width="500px" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="Code Flow Animation" alt = "" width="500px" />
 </p>
 
 <hr/>
