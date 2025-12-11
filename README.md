@@ -17,7 +17,7 @@
 
 ### 🧠 Tech Arsenal
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,dart,flutter,nodejs,express,firebase,neovim,linux,git" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,dart,flutter,spring,mysql,mongodb,firebase,neovim,linux,git" />
 </p>
 
 <hr/>
