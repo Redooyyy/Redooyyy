@@ -37,17 +37,9 @@
   <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=transparent&hide_border=true" alt="GitHub Streak" />
 </p>
 
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true)
+![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs?username=Redooyyy&layout=compact&theme=transparent&hide_border=true)
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&hide_border=true&theme=transparent" alt="GitHub Stats"/>
-    </td>
-    <td>
-      <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Redooyyy&layout=compact&hide_border=true&theme=transparent" alt="Top Languages"/>
-    </td>
-  </tr>
-</table>
 <hr/>
 
 
