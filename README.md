@@ -32,12 +32,13 @@
 <hr/>
 
 ### 📈 GitHub Metrics
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true)
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true" />
-<!-- <img src="https://github-readme-streak-stats.herokuapp.com/?user=Redooyyy&theme=transparent&hide_border=true" didn't render that's why commented out/> -->
   <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=transparent&hide_border=true" alt="GitHub Streak" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Redooyyy&layout=compact&theme=transparent&hide_border=true" />
 </p>
+
+![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs?username=Redooyyy&layout=compact&theme=transparent&hide_border=true)
 
 <hr/>
 
