@@ -2,7 +2,7 @@
 
 <!-- Typing animation -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+Full+Stack+Developer;Competitive+Programming;Flutter+UI;A+learner+who's+still+learning" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+learner+who's+still+learning" alt="Typing SVG" />
 </p>
 
 <!-- Glitchy banner -->
