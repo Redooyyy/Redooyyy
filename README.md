@@ -25,9 +25,9 @@
 ### 🧩 Featured Builds
 | Project | Description |
 |--------|-------------|
-| 🔥 `neovim-snippets` | Competitive programming macros with LuaSnip |
-| 📱 `flutter-heatmap` | Real-time heatmap widget with dynamic logic |
-| 🧠 `zsh-git-aliases` | Streamlined Git workflows with custom aliases |
+| `floatbar-nvim` | A floating terminal inside neovim (remebers buffers) |
+| `flutter-deps` | A Neovim plugin for adding pub dependencies in your flutter project |
+| `waybar` | A custom statusbar for my usage -_-(Avalable 'Reo-s-config') |
 
 <hr/>
 
