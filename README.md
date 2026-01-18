@@ -22,11 +22,12 @@
 <hr/>
 
 ### 🧩 Featured Builds
-| Project | Description |
-|--------|-------------|
-| `floatbar-nvim` | A floating terminal inside neovim (remebers buffers) |
-| `flutter-deps` | A Neovim plugin for adding pub dependencies in your flutter project |
-| `waybar` | A custom statusbar for my usage -_-(Avalable 'Reo-s-config') |
+
+| Project         | Description                                                         |
+| --------------- | ------------------------------------------------------------------- |
+| `floatbar-nvim` | A floating terminal inside neovim (remebers buffers)                |
+| `flutter-deps`  | A Neovim plugin for adding pub dependencies in your flutter project |
+| `waybar`        | A custom statusbar for my usage -\_-(Avalable 'Reo-s-config')       |
 
 <hr/>
 
