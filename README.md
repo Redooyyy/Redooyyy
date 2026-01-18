@@ -1,5 +1,3 @@
-
-
 <!-- Typing animation -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+learner+who's+still+learning" alt="Typing SVG" />
@@ -16,6 +14,7 @@
 <hr/>
 
 ### 🧠 Tech Arsenal
+
 <p align="center">
   <img src="https://skillicons.dev/icons?i=c,cpp,java,dart,flutter,spring,mysql,mongodb,firebase,neovim,linux,git" />
 </p>
@@ -42,8 +41,8 @@
 
 <hr/>
 
-
 ### 🧬 Code Flow
+
 <p align="center">
   <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="Code Flow Animation" alt = "" width="500px" />
 </p>
@@ -51,6 +50,7 @@
 <hr/>
 
 ### 📝 Poetic Bytes
+
 > “I write in silence,  
 > where logic meets longing—  
 > and every bug is a metaphor.”
@@ -58,6 +58,7 @@
 <hr/>
 
 ### 🌐 Connect with Me
+
 <p align="center">
   <a href="https://www.linkedin.com/in/Redooyyy"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" /></a>
   <a href="https://www.facebook.com/Redooyyy"><img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white&style=for-the-badge" /></a>
@@ -67,6 +68,7 @@
 <hr/>
 
 ### 🌀 Visitor Counter
+
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Visitors&color=00F7FF&style=flat-square" />
 </p>
