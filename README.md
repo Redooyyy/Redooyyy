@@ -21,21 +21,7 @@
 <!--  WHO AM I  -->
 
 <div align="center">
-
-```
-  ╭───────────────────────────────────────────────────────────╮
-  │                                                           │
-  │   alias reo="Redoy"                                       │
-  │   reo --status     →  learning obsessively               │
-  │   reo --location   →  somewhere on the internet          │
-  │   reo --editor     →  neovim  (exit? what exit?)         │
-  │   reo --os         →  linux, always linux                 │
-  │   reo --goal       →  open source + job/internship        │
-  │   reo --mood       →  building something no one asked for │
-  │                                                           │
-  ╰───────────────────────────────────────────────────────────╯
-```
-
+  <img src="assets/whoami.svg" width="75%" alt="whoami"/>
 </div>
 
 <br/>
@@ -57,7 +43,8 @@
 <img src="https://skillicons.dev/icons?i=c,cpp,java&theme=dark" alt="C C++ Java"/>&nbsp;&nbsp;
 <img src="https://skillicons.dev/icons?i=dart,flutter&theme=dark" alt="Dart Flutter"/>&nbsp;&nbsp;
 <img src="https://skillicons.dev/icons?i=spring,mysql,mongodb,firebase&theme=dark" alt="Spring MySQL MongoDB Firebase"/>&nbsp;&nbsp;
-<img src="https://skillicons.dev/icons?i=lua,neovim,linux,git&theme=dark" alt="Lua Neovim Linux Git"/>
+<img src="https://skillicons.dev/icons?i=lua,neovim,linux,git&theme=dark" alt="Lua Neovim Linux Git"/>&nbsp;&nbsp;
+<img src="https://skillicons.dev/icons?i=vscode,idea&theme=dark" alt="VS Code IntelliJ"/>
 
 </div>
 
@@ -66,13 +53,14 @@
 
 <div align="center">
 
-| Domain | Tools |
+| &nbsp; | &nbsp; |
 |:---|:---|
-| Systems | `C` &nbsp; `C++` &nbsp; `Linux` &nbsp; `Bash` |
-| Backend | `Java` &nbsp; `Spring Boot` &nbsp; `MySQL` &nbsp; `MongoDB` |
-| Mobile | `Dart` &nbsp; `Flutter` &nbsp; `Firebase` |
-| Editor | `Neovim` &nbsp; `Lua` &nbsp; `Custom configs` |
-| Workflow | `Git` &nbsp; `Hyprland` &nbsp; `Waybar` &nbsp; `Dotfiles` |
+| **Languages** | `C` &nbsp; `C++` &nbsp; `Java` &nbsp; `Dart` &nbsp; `Lua` &nbsp; `Bash` |
+| **Backend** | `Spring Boot` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `Firebase` |
+| **Mobile** | `Flutter` &nbsp; `Dart` |
+| **Editor** | `Neovim` &nbsp; `IntelliJ` &nbsp; `VS Code` |
+| **Shell** | `Nix` &nbsp; `Caelestia Shell` &nbsp; `Custom scripts` |
+| **Workflow** | `cli-yt` &nbsp; `music fetch` &nbsp; `Hyprland` &nbsp; `Dotfiles` |
 
 </div>
 
