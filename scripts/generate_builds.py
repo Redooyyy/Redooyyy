@@ -101,18 +101,18 @@ def pill(x: float, y: int, text: str, color: str) -> tuple[str, float]:
 
 def build_defs() -> str:
     return """<defs>
-  <!-- Card border gradients (Monochrome/Slate) -->
+  <!-- Card border gradients (Soft Glow) -->
   <linearGradient id="b0" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#64748B" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="#334155" stop-opacity="0.6"/>
+    <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#334155" stop-opacity="0.3"/>
   </linearGradient>
   <linearGradient id="b1" x1="100%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#475569" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="#1E293B" stop-opacity="0.6"/>
+    <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#1E293B" stop-opacity="0.3"/>
   </linearGradient>
   <linearGradient id="b2" x1="0%" y1="100%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#334155" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="#475569" stop-opacity="0.6"/>
+    <stop offset="0%"   stop-color="#2DD4BF" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#475569" stop-opacity="0.3"/>
   </linearGradient>
   <!-- Name gradients (Subtle blue & white) -->
   <linearGradient id="n0" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -127,17 +127,17 @@ def build_defs() -> str:
     <stop offset="0%"   stop-color="#E2E8F0"/>
     <stop offset="100%" stop-color="#CBD5E1"/>
   </linearGradient>
-  <!-- Card inner glow (Slate) -->
+  <!-- Card inner glow (Soft Blue) -->
   <radialGradient id="g0" cx="20%" cy="20%" r="70%">
-    <stop offset="0%"   stop-color="#64748B" stop-opacity="0.05"/>
+    <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.04"/>
     <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="g1" cx="80%" cy="20%" r="70%">
-    <stop offset="0%"   stop-color="#475569" stop-opacity="0.05"/>
+    <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.04"/>
     <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="g2" cx="20%" cy="80%" r="70%">
-    <stop offset="0%"   stop-color="#334155" stop-opacity="0.05"/>
+    <stop offset="0%"   stop-color="#2DD4BF" stop-opacity="0.04"/>
     <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
   </radialGradient>
   <filter id="sg">

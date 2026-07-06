@@ -1,28 +1,27 @@
 <svg width="900" height="320" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Professional sleek palette -->
+    <!-- Professional soft glow palette -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#F8FAFC"/>
-      <stop offset="50%"  stop-color="#E2E8F0"/>
-      <stop offset="100%" stop-color="#94A3B8"/>
+      <stop offset="0%"   stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
     <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"  stop-color="#94A3B8"/>
-      <stop offset="100%" stop-color="#64748B"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
     </linearGradient>
     
-    <!-- Very subtle, elegant orbs instead of neon -->
+    <!-- Soft, elegant glowing orbs -->
     <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#3B82F6" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#64748B" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#64748B" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#0EA5E9" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#2DD4BF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
     </radialGradient>
 
     <filter id="glow">

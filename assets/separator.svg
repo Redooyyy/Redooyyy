@@ -1,11 +1,11 @@
 <svg width="900" height="20" viewBox="0 0 900 20" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#3B82F6" stop-opacity="0"/>
-      <stop offset="25%"  stop-color="#475569" stop-opacity="0.6"/>
-      <stop offset="50%"  stop-color="#94A3B8" stop-opacity="0.8"/>
-      <stop offset="75%"  stop-color="#475569" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#818CF8" stop-opacity="0.8"/>
+      <stop offset="75%"  stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="2" result="b"/>

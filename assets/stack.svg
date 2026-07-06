@@ -1,23 +1,23 @@
 <svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Professional monochrome row accents -->
+    <!-- Professional soft glow row accents -->
     <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#64748B"/>
-      <stop offset="100%" stop-color="#475569"/>
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
 
     <!-- Subtle background glows -->
     <linearGradient id="rowGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#64748B" stop-opacity="0.08"/>
-      <stop offset="35%" stop-color="#64748B" stop-opacity="0.02"/>
-      <stop offset="100%" stop-color="#64748B" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.08"/>
+      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Outer border -->
     <linearGradient id="outerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#475569" stop-opacity="0.6"/>
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.3"/>
       <stop offset="50%"  stop-color="#1E293B" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.2"/>
     </linearGradient>
 
     <!-- Header title gradient -->
