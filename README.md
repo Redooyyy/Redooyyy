@@ -52,16 +52,7 @@
 <br/>
 
 <div align="center">
-
-| &nbsp; | &nbsp; |
-|:---|:---|
-| **Languages** | `C` &nbsp; `C++` &nbsp; `Java` &nbsp; `Dart` &nbsp; `Lua` &nbsp; `Bash` |
-| **Backend** | `Spring Boot` &nbsp; `MySQL` &nbsp; `MongoDB` &nbsp; `Firebase` |
-| **Mobile** | `Flutter` &nbsp; `Dart` |
-| **Editor** | `Neovim` &nbsp; `IntelliJ` &nbsp; `VS Code` |
-| **Shell** | `Nix` &nbsp; `Caelestia Shell` &nbsp; `Custom scripts` |
-| **Workflow** | `cli-yt` &nbsp; `music fetch` &nbsp; `Hyprland` &nbsp; `Dotfiles` |
-
+  <img src="assets/stack.svg" width="100%" alt="Tech Stack"/>
 </div>
 
 <br/>
