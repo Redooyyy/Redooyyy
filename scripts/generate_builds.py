@@ -112,43 +112,43 @@ def pill(x: float, y: int, text: str, color: str) -> tuple[str, float]:
 
 def build_defs() -> str:
     return """<defs>
-  <!-- Card border gradients -->
+  <!-- Card border gradients (Monochrome/Slate) -->
   <linearGradient id="b0" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#C084FC" stop-opacity="0.75"/>
-    <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.75"/>
+    <stop offset="0%"   stop-color="#64748B" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#334155" stop-opacity="0.6"/>
   </linearGradient>
   <linearGradient id="b1" x1="100%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.75"/>
-    <stop offset="100%" stop-color="#818CF8" stop-opacity="0.75"/>
+    <stop offset="0%"   stop-color="#475569" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#1E293B" stop-opacity="0.6"/>
   </linearGradient>
   <linearGradient id="b2" x1="0%" y1="100%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.75"/>
-    <stop offset="100%" stop-color="#C084FC" stop-opacity="0.75"/>
+    <stop offset="0%"   stop-color="#334155" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#475569" stop-opacity="0.6"/>
   </linearGradient>
-  <!-- Name gradients -->
+  <!-- Name gradients (Subtle blue & white) -->
   <linearGradient id="n0" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#C084FC"/>
-    <stop offset="100%" stop-color="#818CF8"/>
+    <stop offset="0%"   stop-color="#E2E8F0"/>
+    <stop offset="100%" stop-color="#94A3B8"/>
   </linearGradient>
   <linearGradient id="n1" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#38BDF8"/>
-    <stop offset="100%" stop-color="#818CF8"/>
+    <stop offset="0%"   stop-color="#F8FAFC"/>
+    <stop offset="100%" stop-color="#E2E8F0"/>
   </linearGradient>
   <linearGradient id="n2" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#818CF8"/>
-    <stop offset="100%" stop-color="#C084FC"/>
+    <stop offset="0%"   stop-color="#E2E8F0"/>
+    <stop offset="100%" stop-color="#CBD5E1"/>
   </linearGradient>
-  <!-- Card inner glow -->
+  <!-- Card inner glow (Slate) -->
   <radialGradient id="g0" cx="20%" cy="20%" r="70%">
-    <stop offset="0%"   stop-color="#C084FC" stop-opacity="0.07"/>
+    <stop offset="0%"   stop-color="#64748B" stop-opacity="0.05"/>
     <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="g1" cx="80%" cy="20%" r="70%">
-    <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.07"/>
+    <stop offset="0%"   stop-color="#475569" stop-opacity="0.05"/>
     <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="g2" cx="20%" cy="80%" r="70%">
-    <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.07"/>
+    <stop offset="0%"   stop-color="#334155" stop-opacity="0.05"/>
     <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
   </radialGradient>
   <filter id="sg">
@@ -159,7 +159,7 @@ def build_defs() -> str:
     @keyframes p0{0%,100%{opacity:.55}50%{opacity:1}}
     @keyframes p1{0%,100%{opacity:.45}50%{opacity:.85}}
     @keyframes p2{0%,100%{opacity:.5}50%{opacity:.9}}
-    @keyframes sg{0%,100%{opacity:.6}50%{opacity:1}}
+    @keyframes sg{0%,100%{opacity:.5}50%{opacity:.8}}
     .p0{animation:p0 4s ease-in-out infinite}
     .p1{animation:p1 5s ease-in-out infinite}
     .p2{animation:p2 6s ease-in-out infinite}
@@ -198,7 +198,7 @@ def render_card(repo: dict, index: int, x: float, y: float, w: float, h: float) 
     # Subtle header separator line
     lines.append(
         f'<line x1="{x:.1f}" y1="{y+30:.1f}" x2="{x+w:.1f}" y2="{y+30:.1f}" '
-        f'stroke="#818CF8" stroke-width="0.5" opacity="0.18"/>'
+        f'stroke="#64748B" stroke-width="0.5" opacity="0.3"/>'
     )
 
     # Project name

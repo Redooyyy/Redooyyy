@@ -1,28 +1,16 @@
 <svg width="720" height="310" viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#C084FC" stop-opacity="0.7"/>
-      <stop offset="50%"  stop-color="#818CF8" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.7"/>
-    </linearGradient>
-    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#C084FC"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
-    <linearGradient id="keyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#818CF8"/>
-      <stop offset="100%" stop-color="#6366F1"/>
+      <stop offset="0%"   stop-color="#475569" stop-opacity="0.8"/>
+      <stop offset="50%"  stop-color="#334155" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.8"/>
     </linearGradient>
     <radialGradient id="bgGlow" cx="50%" cy="0%" r="80%">
-      <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.07"/>
-      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#3B82F6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feComposite in="SourceGraphic" in2="b" operator="over"/>
-    </filter>
     <filter id="softGlow">
-      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
       <feComposite in="SourceGraphic" in2="b" operator="over"/>
     </filter>
     <style>
@@ -31,13 +19,13 @@
         50%       { opacity: 0; }
       }
       @keyframes scanline {
-        0%   { transform: translateY(58px);  opacity: 0.06; }
+        0%   { transform: translateY(58px);  opacity: 0.04; }
         100% { transform: translateY(270px); opacity: 0; }
       }
       @keyframes shimmer {
-        0%   { opacity: 0.3; }
-        50%  { opacity: 0.7; }
-        100% { opacity: 0.3; }
+        0%   { opacity: 0.4; }
+        50%  { opacity: 0.8; }
+        100% { opacity: 0.4; }
       }
       .cursor { animation: blink 1.1s step-end infinite; }
       .scan   { animation: scanline 4s linear infinite; }
@@ -55,29 +43,29 @@
         stroke-width="1.5"
         filter="url(#softGlow)"/>
 
-  <!-- Inner subtle fill for terminal feel (very dark, almost transparent) -->
+  <!-- Inner subtle fill for terminal feel -->
   <rect x="3" y="3" width="714" height="304" rx="12"
-        fill="#0d1117" fill-opacity="0.55"/>
+        fill="#0d1117" fill-opacity="0.6"/>
 
-  <!-- Scanline effect (animated horizontal bar sliding down) -->
+  <!-- Scanline effect -->
   <rect class="scan" x="3" y="0" width="714" height="18" rx="0"
-        fill="#818CF8" opacity="0.06"/>
+        fill="#94A3B8" opacity="0.04"/>
 
   <!-- Window header bar -->
   <rect x="3" y="3" width="714" height="36" rx="12"
-        fill="#161b22" fill-opacity="0.8"/>
+        fill="#161b22" fill-opacity="0.9"/>
   <rect x="3" y="27" width="714" height="12"
-        fill="#161b22" fill-opacity="0.8"/>
+        fill="#161b22" fill-opacity="0.9"/>
 
-  <!-- Traffic light dots -->
-  <circle cx="28"  cy="21" r="5.5" fill="#FF5F57" opacity="0.9"/>
-  <circle cx="48"  cy="21" r="5.5" fill="#FFBD2E" opacity="0.9"/>
-  <circle cx="68"  cy="21" r="5.5" fill="#28C840" opacity="0.9"/>
+  <!-- Traffic light dots (muted macOS style) -->
+  <circle cx="28"  cy="21" r="5.5" fill="#EF4444" opacity="0.8"/>
+  <circle cx="48"  cy="21" r="5.5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="68"  cy="21" r="5.5" fill="#10B981" opacity="0.8"/>
 
   <!-- Window title -->
   <text x="360" y="26"
         font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="11" fill="#4B5563"
+        font-size="11" fill="#64748B"
         text-anchor="middle" letter-spacing="1">
     reo@universe ~ bash
   </text>
@@ -85,18 +73,17 @@
   <!-- Prompt line -->
   <text x="30" y="72"
         font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="13" fill="#C084FC"
-        filter="url(#glow)">
+        font-size="13" fill="#3B82F6">
     ~
   </text>
   <text x="45" y="72"
         font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="13" fill="#38BDF8">
+        font-size="13" fill="#94A3B8">
     reo@universe
   </text>
   <text x="148" y="72"
         font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="13" fill="#94A3B8">
+        font-size="13" fill="#64748B">
     $
   </text>
   <text x="163" y="72"
@@ -104,66 +91,53 @@
         font-size="13" fill="#E2E8F0">
     ./whoami
   </text>
-  <!-- blinking cursor after command -->
-  <rect class="cursor" x="250" y="59" width="8" height="14" rx="1" fill="#818CF8" opacity="0.85"/>
+  <rect class="cursor" x="250" y="59" width="8" height="14" rx="1" fill="#64748B" opacity="0.85"/>
 
   <!-- Divider under prompt -->
   <line x1="30" y1="83" x2="690" y2="83"
-        stroke="#818CF8" stroke-width="0.5" opacity="0.2"/>
+        stroke="#475569" stroke-width="0.5" opacity="0.3"/>
 
   <!-- Content rows — key | arrow | value -->
   <!-- Row 1 -->
-  <text x="44"  y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#818CF8" class="shimmer">alias</text>
+  <text x="44"  y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#3B82F6" class="shimmer">alias</text>
   <text x="100" y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#E2E8F0">reo</text>
-  <text x="128" y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#4B5563">=</text>
-  <text x="140" y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#C084FC">"Redoy"</text>
+  <text x="128" y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">=</text>
+  <text x="140" y="110" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#14B8A6">"Redoy"</text>
 
   <!-- Row 2 -->
-  <text x="44"  y="136" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#38BDF8">status</text>
+  <text x="44"  y="136" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">status</text>
   <text x="120" y="136" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">›</text>
-  <text x="136" y="136" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#CBD5E1">learning obsessively &amp; shipping quietly</text>
+  <text x="136" y="136" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8">learning obsessively &amp; shipping quietly</text>
 
   <!-- Row 3 -->
-  <text x="44"  y="160" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#38BDF8">editor</text>
+  <text x="44"  y="160" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">editor</text>
   <text x="120" y="160" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">›</text>
-  <text x="136" y="160" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#CBD5E1">neovim</text>
+  <text x="136" y="160" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8">neovim</text>
   <text x="200" y="160" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">  / intellij  / vscode</text>
 
   <!-- Row 4 -->
-  <text x="44"  y="184" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#38BDF8">shell</text>
+  <text x="44"  y="184" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">shell</text>
   <text x="120" y="184" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">›</text>
-  <text x="136" y="184" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#CBD5E1">nix  +  caelestia  +  my own tweaks</text>
+  <text x="136" y="184" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8">nix  +  caelestia  +  my own tweaks</text>
 
   <!-- Row 5 -->
-  <text x="44"  y="208" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#38BDF8">workflow</text>
+  <text x="44"  y="208" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">workflow</text>
   <text x="120" y="208" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">›</text>
-  <text x="136" y="208" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#CBD5E1">cli-yt  ·  music fetch  ·  custom scripts</text>
+  <text x="136" y="208" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8">cli-yt  ·  music fetch  ·  custom scripts</text>
 
   <!-- Row 6 -->
-  <text x="44"  y="232" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#38BDF8">goal</text>
+  <text x="44"  y="232" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">goal</text>
   <text x="120" y="232" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">›</text>
-  <text x="136" y="232" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#CBD5E1">open source  +  job / internship</text>
+  <text x="136" y="232" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8">open source  +  job / internship</text>
 
   <!-- Row 7 -->
-  <text x="44"  y="256" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#38BDF8">mood</text>
+  <text x="44"  y="256" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B">mood</text>
   <text x="120" y="256" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#475569">›</text>
-  <text x="136" y="256" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#CBD5E1">building things no one asked for  -_-</text>
+  <text x="136" y="256" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8">building things no one asked for  -_-</text>
 
   <!-- Bottom exit prompt -->
-  <text x="44"  y="285"
-        font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="12.5" fill="#C084FC" opacity="0.5">
-    ~
-  </text>
-  <text x="58"  y="285"
-        font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="12.5" fill="#38BDF8" opacity="0.5">
-    reo@universe
-  </text>
-  <text x="162" y="285"
-        font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="12.5" fill="#94A3B8" opacity="0.5">
-    $
-  </text>
-  <rect class="cursor" x="178" y="272" width="8" height="14" rx="1" fill="#818CF8" opacity="0.5"/>
+  <text x="44"  y="285" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#3B82F6" opacity="0.6">~</text>
+  <text x="58"  y="285" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#94A3B8" opacity="0.6">reo@universe</text>
+  <text x="162" y="285" font-family="'JetBrains Mono','Courier New',monospace" font-size="12.5" fill="#64748B" opacity="0.6">$</text>
+  <rect class="cursor" x="178" y="272" width="8" height="14" rx="1" fill="#64748B" opacity="0.5"/>
 </svg>
