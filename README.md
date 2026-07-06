@@ -69,6 +69,7 @@
 
 <br/>
 
+<!-- BUILDS START -->
 <div align="center">
   <img src="assets/builds.svg" width="100%" alt="Featured Builds"/>
 </div>
@@ -83,6 +84,7 @@
 [Reoo-s-Dotfiles](https://github.com/Redooyyy/Reoo-s-Dotfiles)
 
 </div>
+<!-- BUILDS END -->
 
 <br/>
 

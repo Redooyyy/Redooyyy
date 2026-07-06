@@ -228,39 +228,80 @@ def render_card(repo: dict, index: int, x: float, y: float, w: float, h: float) 
     return "\n".join(lines)
 
 
-def generate_svg(repos: list) -> str:
-    SVG_W   = 900
-    CARD_H  = 168
-    CARD_GAP = 10
-    PAD     = 8
-    COLS    = 2
-    CARD_W  = (SVG_W - PAD * (COLS + 1)) / COLS   # ~440
-
-    rows   = math.ceil(len(repos) / COLS)
-    SVG_H  = PAD + rows * (CARD_H + CARD_GAP) - CARD_GAP + PAD
-
-    cards = []
-    for idx, repo in enumerate(repos):
-        col = idx % COLS
-        row = idx // COLS
-        x   = PAD + col * (CARD_W + PAD)
-        y   = PAD + row * (CARD_H + CARD_GAP)
-        cards.append(render_card(repo, idx, x, y, CARD_W, CARD_H))
-
+def generate_individual_svgs(repos: list):
+    SVG_W = 440
+    CARD_H = 168
     defs = build_defs()
-    body = "\n\n".join(cards)
+    
+    # Clean up old SVGs if any
+    for old in glob.glob(os.path.join("assets", "build-*.svg")):
+        os.remove(old)
+        
+    generated = []
+    for idx, repo in enumerate(repos):
+        svg_content = (
+            f'<svg width="{SVG_W}" height="{CARD_H}" '
+            f'viewBox="0 0 {SVG_W} {CARD_H}" '
+            f'xmlns="http://www.w3.org/2000/svg">\n'
+            f'{defs}\n\n'
+            f'{render_card(repo, idx, 0, 0, SVG_W, CARD_H)}\n'
+            f'</svg>\n'
+        )
+        path = os.path.join("assets", f"build-{idx}.svg")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(svg_content)
+        generated.append({
+            "url": repo.get("url", ""),
+            "path": f"assets/build-{idx}.svg"
+        })
+    return generated
 
-    return (
-        f'<svg width="{SVG_W}" height="{int(SVG_H)}" '
-        f'viewBox="0 0 {SVG_W} {int(SVG_H)}" '
-        f'xmlns="http://www.w3.org/2000/svg">\n'
-        f'{defs}\n\n'
-        f'{body}\n'
-        f'</svg>\n'
-    )
+
+def update_readme(generated: list):
+    readme_path = "README.md"
+    if not os.path.exists(readme_path):
+        return
+        
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    start_marker = "<!-- BUILDS START -->"
+    end_marker = "<!-- BUILDS END -->"
+    
+    start_idx = content.find(start_marker)
+    end_idx = content.find(end_marker)
+    
+    if start_idx == -1 or end_idx == -1:
+        print("Builds markers not found in README.md")
+        return
+        
+    new_section = [start_marker, '<div align="center">']
+    for idx, item in enumerate(generated):
+        link = f'<a href="{item["url"]}"><img src="{item["path"]}" width="48%" alt="Build {idx+1}"/></a>'
+        new_section.append(link)
+        if idx % 2 == 1:
+            new_section.append('</div>\n<div align="center">')
+        else:
+            new_section.append('&nbsp;')
+            
+    # Clean up trailing div stuff if odd number of items
+    if len(generated) % 2 != 0:
+        new_section.append('</div>')
+    else:
+        # If even, the last thing added was the opening of a new div, so we pop it
+        new_section.pop()
+        new_section.append('</div>')
+        
+    new_section.append(end_marker)
+    
+    new_content = content[:start_idx] + "\n".join(new_section) + content[end_idx + len(end_marker):]
+    
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
 
 
 def main():
+    import glob
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         print("Error: set the GITHUB_TOKEN environment variable.", file=sys.stderr)
@@ -279,13 +320,11 @@ def main():
 
     print(f"Found {len(repos)} pinned repo(s): {[r['name'] for r in repos]}")
 
-    svg = generate_svg(repos)
+    os.makedirs("assets", exist_ok=True)
+    generated = generate_individual_svgs(repos)
+    update_readme(generated)
 
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        f.write(svg)
-
-    print(f"SVG written to {OUTPUT_PATH}  ({len(svg)} bytes)")
+    print(f"Generated {len(generated)} SVGs and updated README.md")
 
 
 if __name__ == "__main__":
