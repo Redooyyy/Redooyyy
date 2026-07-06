@@ -99,9 +99,18 @@
 <rect x="8.0" y="364.0" width="438.0" height="168" rx="13" fill="url(#g1)"/>
 <rect x="8.0" y="364.0" width="438.0" height="168" rx="13" fill="none" stroke="url(#b1)" stroke-width="1.4" class="p1" filter="url(#sg)"/>
 <line x1="8.0" y1="394.0" x2="446.0" y2="394.0" stroke="#818CF8" stroke-width="0.5" opacity="0.18"/>
-<text x="26.0" y="387.0" font-family="'JetBrains Mono','Courier New',monospace" font-size="14" font-weight="700" fill="url(#n1)" filter="url(#sg)">HabitTracker</text>
+<text x="26.0" y="387.0" font-family="'JetBrains Mono','Courier New',monospace" font-size="14" font-weight="700" fill="url(#n1)" filter="url(#sg)">F.L.O.R.A</text>
 <text x="26.0" y="416.0" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#94A3B8">No description provided.</text>
-<rect x="26.0" y="500" width="46.0" height="20" rx="5" fill="#F87171" fill-opacity="0.15" stroke="#F87171" stroke-width="0.7" stroke-opacity="0.5"/><text x="49.0" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#F87171" text-anchor="middle">HTML</text>
-<rect x="78.0" y="500" width="46.0" height="20" rx="5" fill="#22D3EE" fill-opacity="0.15" stroke="#22D3EE" stroke-width="0.7" stroke-opacity="0.5"/><text x="101.0" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#22D3EE" text-anchor="middle">Dart</text>
-<rect x="130.0" y="500" width="39.0" height="20" rx="5" fill="#A78BFA" fill-opacity="0.15" stroke="#A78BFA" stroke-width="0.7" stroke-opacity="0.5"/><text x="149.5" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#A78BFA" text-anchor="middle">C++</text>
+<rect x="26.0" y="500" width="46.0" height="20" rx="5" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="0.7" stroke-opacity="0.5"/><text x="49.0" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#F59E0B" text-anchor="middle">Java</text>
+<rect x="78.0" y="500" width="39.0" height="20" rx="5" fill="#C084FC" fill-opacity="0.15" stroke="#C084FC" stroke-width="0.7" stroke-opacity="0.5"/><text x="97.5" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#C084FC" text-anchor="middle">CSS</text>
+
+<rect x="454.0" y="364.0" width="438.0" height="168" rx="13" fill="#0d1117" fill-opacity="0.65"/>
+<rect x="454.0" y="364.0" width="438.0" height="168" rx="13" fill="url(#g2)"/>
+<rect x="454.0" y="364.0" width="438.0" height="168" rx="13" fill="none" stroke="url(#b2)" stroke-width="1.4" class="p2" filter="url(#sg)"/>
+<line x1="454.0" y1="394.0" x2="892.0" y2="394.0" stroke="#818CF8" stroke-width="0.5" opacity="0.18"/>
+<text x="472.0" y="387.0" font-family="'JetBrains Mono','Courier New',monospace" font-size="14" font-weight="700" fill="url(#n2)" filter="url(#sg)">Reoo-s-Dev-Env</text>
+<text x="472.0" y="416.0" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#94A3B8">No description provided.</text>
+<rect x="472.0" y="500" width="39.0" height="20" rx="5" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/><text x="491.5" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#818CF8" text-anchor="middle">Lua</text>
+<rect x="517.0" y="500" width="88.0" height="20" rx="5" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.5"/><text x="561.0" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#38BDF8" text-anchor="middle">TypeScript</text>
+<rect x="611.0" y="500" width="53.0" height="20" rx="5" fill="#34D399" fill-opacity="0.15" stroke="#34D399" stroke-width="0.7" stroke-opacity="0.5"/><text x="637.5" y="514" font-family="'JetBrains Mono',monospace" font-size="11" fill="#34D399" text-anchor="middle">Shell</text>
 </svg>
