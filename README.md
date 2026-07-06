@@ -1,119 +1,90 @@
 <div align="center">
-  <img src="assets/header.svg" alt="Redoy — Backend Crafter" width="100%"/>
+  <img src="assets/header.svg" width="100%" alt="Redoy"/>
 </div>
 
 <br/>
 
 <div align="center">
   <a href="https://github.com/Redooyyy">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1500&color=00F7FF&center=true&vCenter=true&width=460&lines=A+learner+who's+still+learning...;Building+things+that+matter.;Always+in+the+terminal." alt="Typing animation"/>
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&pause=2000&color=818CF8&center=true&vCenter=true&multiline=false&width=480&lines=The+best+time+to+start+was+yesterday.;The+second+best+time+is+right+now.;Still+learning.+Always+shipping." alt="Typing"/>
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
+  <img src="assets/separator.svg" width="85%" alt=""/>
 </div>
 
 <br/>
 
-<!-- ABOUT -->
+<!--  WHO AM I  -->
 
-<table align="center" width="90%" border="0">
-<tr>
-<td valign="top" width="55%">
-
-### About Me
+<div align="center">
 
 ```
-Redoy / Redooyyy
-─────────────────────────────────────
-Role       Backend Crafter, Plugin Builder
-Focus      JVM, Dart/Flutter, Linux Systems
-Editor     Neovim  (yes, always)
-OS         Linux   (btw, I use arch-ish)
-Status     Learning · Building · Exploring
-Goal       Looking for job / internship
-─────────────────────────────────────
-"Just an enthusiastic person
- who's learning and exploring
- new things  -_-"
+  ╭───────────────────────────────────────────────────────────╮
+  │                                                           │
+  │   alias reo="Redoy"                                       │
+  │   reo --status     →  learning obsessively               │
+  │   reo --location   →  somewhere on the internet          │
+  │   reo --editor     →  neovim  (exit? what exit?)         │
+  │   reo --os         →  linux, always linux                 │
+  │   reo --goal       →  open source + job/internship        │
+  │   reo --mood       →  building something no one asked for │
+  │                                                           │
+  ╰───────────────────────────────────────────────────────────╯
 ```
 
-</td>
-<td valign="top" width="45%">
-
-### Currently
-
-```yaml
-learning:
-  - System Design
-  - Backend Architecture
-  - Neovim Plugin Ecosystem
-
-building:
-  - Neovim plugins (Lua)
-  - Flutter applications
-  - Linux configurations
-
-interests:
-  - Open Source
-  - Developer Tooling
-  - Clean Code
-```
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
-</div>
-
-<br/>
-
-<!-- TECH ARSENAL -->
-
-<h3 align="center">Tech Arsenal</h3>
-
-<br/>
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java&theme=dark" alt="C, C++, Java" title="C | C++ | Java"/>
-  &nbsp;&nbsp;
-  <img src="https://skillicons.dev/icons?i=dart,flutter&theme=dark" alt="Dart, Flutter" title="Dart | Flutter"/>
-  &nbsp;&nbsp;
-  <img src="https://skillicons.dev/icons?i=spring,mysql,mongodb,firebase&theme=dark" alt="Spring, MySQL, MongoDB, Firebase" title="Spring Boot | MySQL | MongoDB | Firebase"/>
-  &nbsp;&nbsp;
-  <img src="https://skillicons.dev/icons?i=neovim,linux,git&theme=dark" alt="Neovim, Linux, Git" title="Neovim | Linux | Git"/>
 </div>
 
 <br/>
 
 <div align="center">
+  <img src="assets/separator.svg" width="85%" alt=""/>
+</div>
 
-| Layer | Stack |
-|:---:|:---|
-| **Language** | C &nbsp; C++ &nbsp; Java &nbsp; Dart |
-| **Framework** | Flutter &nbsp; Spring Boot |
-| **Database** | MySQL &nbsp; MongoDB &nbsp; Firebase |
-| **Tooling** | Neovim &nbsp; Git &nbsp; Linux &nbsp; Waybar |
-| **Scripting** | Lua &nbsp; Bash |
+<br/>
+
+<!--  STACK  -->
+
+<h3 align="center">Stack</h3>
+
+<br/>
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=c,cpp,java&theme=dark" alt="C C++ Java"/>&nbsp;&nbsp;
+<img src="https://skillicons.dev/icons?i=dart,flutter&theme=dark" alt="Dart Flutter"/>&nbsp;&nbsp;
+<img src="https://skillicons.dev/icons?i=spring,mysql,mongodb,firebase&theme=dark" alt="Spring MySQL MongoDB Firebase"/>&nbsp;&nbsp;
+<img src="https://skillicons.dev/icons?i=lua,neovim,linux,git&theme=dark" alt="Lua Neovim Linux Git"/>
+
+</div>
+
+<br/>
+<br/>
+
+<div align="center">
+
+| Domain | Tools |
+|:---|:---|
+| Systems | `C` &nbsp; `C++` &nbsp; `Linux` &nbsp; `Bash` |
+| Backend | `Java` &nbsp; `Spring Boot` &nbsp; `MySQL` &nbsp; `MongoDB` |
+| Mobile | `Dart` &nbsp; `Flutter` &nbsp; `Firebase` |
+| Editor | `Neovim` &nbsp; `Lua` &nbsp; `Custom configs` |
+| Workflow | `Git` &nbsp; `Hyprland` &nbsp; `Waybar` &nbsp; `Dotfiles` |
 
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
+  <img src="assets/separator.svg" width="85%" alt=""/>
 </div>
 
 <br/>
 
-<!-- FEATURED BUILDS -->
+<!--  FEATURED BUILDS  -->
 
 <h3 align="center">Featured Builds</h3>
 
@@ -121,48 +92,69 @@ interests:
 
 <div align="center">
 
-<table width="90%" border="0">
+<table width="92%">
 <tr>
+<td align="left" valign="top" width="50%">
 
-<td align="center" width="33%" valign="top">
-<a href="https://github.com/Redooyyy/floatbar-nvim">
-<img src="https://img.shields.io/badge/floatbar--nvim-0D1117?style=for-the-badge&logo=neovim&logoColor=00F7FF&labelColor=0D1117" alt="floatbar-nvim"/>
-</a>
+**[flutter-deps.nvim](https://github.com/Redooyyy/flutter-deps.nvim)** &nbsp;
+![stars](https://img.shields.io/github/stars/Redooyyy/flutter-deps.nvim?style=flat&color=818CF8&labelColor=0d1117&label=stars)
 
-**Floating Terminal for Neovim**
+Fuzzy-find and add pub.dev dependencies to your Flutter project — version picker included. No browser. No copy-paste. Just flow.
 
-A persistent floating terminal that remembers its buffers across sessions. Seamlessly embedded into any Neovim workflow.
-
-`Lua` &nbsp; `Neovim API` &nbsp; `Terminal`
+`Lua` &nbsp; `Neovim` &nbsp; `Flutter`
 
 </td>
+<td align="left" valign="top" width="50%">
 
-<td align="center" width="33%" valign="top">
-<a href="https://github.com/Redooyyy/flutter-deps">
-<img src="https://img.shields.io/badge/flutter--deps-0D1117?style=for-the-badge&logo=flutter&logoColor=00F7FF&labelColor=0D1117" alt="flutter-deps"/>
-</a>
+**[floatbar-nvim](https://github.com/Redooyyy/floatbar-nvim)** &nbsp;
+![stars](https://img.shields.io/github/stars/Redooyyy/floatbar-nvim?style=flat&color=818CF8&labelColor=0d1117&label=stars)
 
-**Pub Dependency Manager Plugin**
+A floating, persistent terminal panel inside Neovim that actually remembers what you were doing. Context stays, distractions don't.
 
-A Neovim plugin that lets you search and add Flutter pub.dev dependencies directly from your editor, without leaving the terminal.
-
-`Lua` &nbsp; `Flutter` &nbsp; `pub.dev`
+`Lua` &nbsp; `Neovim` &nbsp; `Terminal`
 
 </td>
+</tr>
+<tr>
+<td align="left" valign="top">
 
-<td align="center" width="33%" valign="top">
-<a href="https://github.com/Redooyyy/waybar">
-<img src="https://img.shields.io/badge/Reo--s--config-0D1117?style=for-the-badge&logo=linux&logoColor=00F7FF&labelColor=0D1117" alt="Reo-s-config"/>
-</a>
+**[F.L.O.R.A](https://github.com/Redooyyy/F.L.O.R.A)**
 
-**Custom Waybar Configuration**
+A Java project — because sometimes you build something and let the name do the talking. The name is an acronym. The code does the rest.
 
-A highly personalized, aesthetic Waybar status bar setup crafted for daily Linux use. Part of my personal desktop configuration.
-
-`CSS` &nbsp; `JSON` &nbsp; `Linux`
+`Java`
 
 </td>
+<td align="left" valign="top">
 
+**[Reoo-s-Dev-Env](https://github.com/Redooyyy/Reoo-s-Dev-Env)**
+
+My entire development environment, scripted and version-controlled. Because a developer's environment is as personal as their handwriting.
+
+`Lua` &nbsp; `Shell`
+
+</td>
+</tr>
+<tr>
+<td align="left" valign="top">
+
+**[nvim-reo-sticky](https://github.com/Redooyyy/nvim-reo-sticky)**
+
+Sticky notes inside Neovim. Because sometimes the best TODO manager is the one you never have to leave your editor to use.
+
+`Lua` &nbsp; `Neovim`
+
+</td>
+<td align="left" valign="top">
+
+**[Reoo-s-Dotfiles](https://github.com/Redooyyy/Reoo-s-Dotfiles)** &nbsp;
+![stars](https://img.shields.io/github/stars/Redooyyy/Reoo-s-Dotfiles?style=flat&color=818CF8&labelColor=0d1117&label=stars)
+
+My Linux dotfiles — Hyprland, Waybar, Neovim, everything. The desktop is a canvas. This is my art.
+
+`Lua` &nbsp; `CSS` &nbsp; `JSON`
+
+</td>
 </tr>
 </table>
 
@@ -171,103 +163,119 @@ A highly personalized, aesthetic Waybar status bar setup crafted for daily Linux
 <br/>
 
 <div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
+  <img src="assets/separator.svg" width="85%" alt=""/>
 </div>
 
 <br/>
 
-<!-- GITHUB METRICS -->
+<!--  GITHUB METRICS  -->
 
-<h3 align="center">GitHub Metrics</h3>
+<h3 align="center">Metrics</h3>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=transparent&hide_border=true&stroke=00F7FF&ring=7C3AED&fire=00F7FF&currStreakLabel=00F7FF&sideLabels=94A3B8&dates=64748B" alt="GitHub Streak" width="70%"/>
+  <img
+    src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=transparent&hide_border=true&stroke=818CF8&ring=C084FC&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=818CF8&dates=475569&currStreakNum=F8FAFC&sideNums=E2E8F0"
+    alt="Streak"
+    width="68%"
+  />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true&title_color=00F7FF&icon_color=7C3AED&text_color=E2E8F0&ring_color=00F7FF" alt="GitHub Stats" width="47%"/>
+  <img
+    src="https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true&title_color=818CF8&icon_color=C084FC&text_color=CBD5E1&ring_color=38BDF8"
+    alt="Stats"
+    width="47%"
+  />
   &nbsp;
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Redooyyy&layout=compact&theme=transparent&hide_border=true&title_color=00F7FF&text_color=E2E8F0&langs_count=8" alt="Top Languages" width="40%"/>
+  <img
+    src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Redooyyy&layout=compact&theme=transparent&hide_border=true&title_color=818CF8&text_color=CBD5E1&langs_count=8"
+    alt="Top Languages"
+    width="40%"
+  />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Redooyyy&bg_color=00000000&color=00F7FF&line=7C3AED&point=00F7FF&area=true&area_color=00F7FF&hide_border=true&radius=6" alt="Activity Graph" width="90%"/>
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Redooyyy&bg_color=00000000&color=818CF8&line=C084FC&point=38BDF8&area=true&area_color=818CF8&hide_border=true&radius=6"
+    alt="Activity Graph"
+    width="90%"
+  />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
+  <img src="assets/separator.svg" width="85%" alt=""/>
 </div>
 
 <br/>
 
-<!-- POETIC BYTES -->
+<!--  MIND  -->
 
 <div align="center">
+<br/>
+
+> *Most people wait for the right moment.*
+> *I make the moment right.*
 
 <br/>
 
-*"I write in silence,*
-*where logic meets longing —*
-*and every bug is a metaphor."*
+> *The terminal is where I think clearly.*
+> *The code is where I speak honestly.*
 
 <br/>
-
 </div>
 
 <div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
-</div>
-
-<br/>
-
-<!-- CONNECT -->
-
-<h3 align="center">Connect</h3>
-
-<br/>
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/Redooyyy">
-  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00F7FF" alt="LinkedIn"/>
-</a>
-&nbsp;
-<a href="https://www.facebook.com/Redooyyy">
-  <img src="https://img.shields.io/badge/Facebook-0D1117?style=for-the-badge&logo=facebook&logoColor=00F7FF" alt="Facebook"/>
-</a>
-&nbsp;
-<a href="https://discordapp.com/users/Redooyyy">
-  <img src="https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=00F7FF" alt="Discord"/>
-</a>
-&nbsp;
-<a href="https://github.com/Redooyyy">
-  <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00F7FF" alt="GitHub"/>
-</a>
-
+  <img src="assets/separator.svg" width="85%" alt=""/>
 </div>
 
 <br/>
 
+<!--  CONNECT  -->
+
+<h3 align="center">Find Me</h3>
+
+<br/>
+
 <div align="center">
-  <img src="assets/separator.svg" width="80%" alt=""/>
+  <a href="https://www.linkedin.com/in/Redooyyy">
+    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=818CF8" alt="LinkedIn"/>
+  </a>
+  &nbsp;
+  <a href="https://www.facebook.com/Redooyyy">
+    <img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=818CF8" alt="Facebook"/>
+  </a>
+  &nbsp;
+  <a href="https://discordapp.com/users/Redooyyy">
+    <img src="https://img.shields.io/badge/Discord-0d1117?style=for-the-badge&logo=discord&logoColor=818CF8" alt="Discord"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/Redooyyy">
+    <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=818CF8" alt="GitHub"/>
+  </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Profile+Views&color=00F7FF&style=flat-square&labelColor=0D1117" alt="Profile Views"/>
+  <img src="assets/separator.svg" width="85%" alt=""/>
 </div>
 
 <br/>
 
 <div align="center">
-  <sub>Built with logic and longing — Redoy</sub>
+  <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=visitors&color=818CF8&style=flat-square&labelColor=0d1117" alt="visitors"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <sub>Redoy &nbsp;·&nbsp; still learning &nbsp;·&nbsp; always building</sub>
 </div>
