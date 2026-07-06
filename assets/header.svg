@@ -1,0 +1,88 @@
+<svg width="900" height="280" viewBox="0 0 900 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Transparent background, no fill on root rect -->
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00F7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#00F7FF"/>
+    </linearGradient>
+    <linearGradient id="subGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00F7FF" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00F7FF" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="textGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="lineGlow" x="-5%" y="-100%" width="110%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Animated keyframes in style -->
+    <style>
+      .pulse { animation: pulse 4s ease-in-out infinite alternate; }
+      .pulse2 { animation: pulse 5s ease-in-out infinite alternate-reverse; }
+      .drift { animation: drift 8s ease-in-out infinite alternate; }
+      .drift2 { animation: drift 10s ease-in-out infinite alternate-reverse; }
+      @keyframes pulse {
+        0%   { opacity: 0.4; r: 90px; }
+        100% { opacity: 0.9; r: 110px; }
+      }
+      @keyframes drift {
+        0%   { transform: translate(0px, 0px); }
+        100% { transform: translate(20px, -15px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Ambient glow orbs (transparent background) -->
+  <circle cx="130" cy="100" r="100" fill="url(#glow1)" class="drift"/>
+  <circle cx="780" cy="180" r="120" fill="url(#glow2)" class="drift2"/>
+  <circle cx="450" cy="40" r="60" fill="url(#glow1)" class="pulse" opacity="0.3"/>
+
+  <!-- Decorative geometric lines -->
+  <line x1="50" y1="240" x2="850" y2="240" stroke="url(#lineGrad)" stroke-width="1.5" filter="url(#lineGlow)"/>
+  <line x1="50" y1="45" x2="260" y2="45" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.5"/>
+  <line x1="640" y1="45" x2="850" y2="45" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Top corner accents -->
+  <polyline points="50,60 50,45 65,45" fill="none" stroke="#00F7FF" stroke-width="2" opacity="0.7"/>
+  <polyline points="835,45 850,45 850,60" fill="none" stroke="#7C3AED" stroke-width="2" opacity="0.7"/>
+  <polyline points="50,230 50,245 65,245" fill="none" stroke="#7C3AED" stroke-width="2" opacity="0.7"/>
+  <polyline points="835,245 850,245 850,230" fill="none" stroke="#00F7FF" stroke-width="2" opacity="0.7"/>
+
+  <!-- Small floating particles -->
+  <circle cx="200" cy="220" r="2.5" fill="#00F7FF" opacity="0.6"/>
+  <circle cx="350" cy="55" r="2" fill="#7C3AED" opacity="0.5"/>
+  <circle cx="600" cy="50" r="2.5" fill="#00F7FF" opacity="0.4"/>
+  <circle cx="720" cy="225" r="2" fill="#7C3AED" opacity="0.6"/>
+  <circle cx="80" cy="160" r="1.5" fill="#00F7FF" opacity="0.5"/>
+  <circle cx="830" cy="120" r="1.5" fill="#7C3AED" opacity="0.5"/>
+
+  <!-- Main title -->
+  <text x="450" y="130" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="60" font-weight="700" fill="url(#textGrad)" text-anchor="middle" letter-spacing="-1" filter="url(#textGlow)">Hey, I'm Redoy</text>
+
+  <!-- Sub tagline -->
+  <text x="450" y="175" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="300" fill="url(#subGrad)" text-anchor="middle" letter-spacing="1.5">Crafting backend spells  /  Decoding algorithms  /  Sketching in pixels</text>
+
+  <!-- Poetic quote -->
+  <text x="450" y="218" font-family="'Georgia', serif" font-size="13.5" font-weight="400" fill="#00F7FF" text-anchor="middle" opacity="0.75" letter-spacing="0.5" font-style="italic">"I write in silence, where logic meets longing — and every bug is a metaphor."</text>
+</svg>
