@@ -229,6 +229,7 @@ def render_card(repo: dict, index: int, x: float, y: float, w: float, h: float) 
 
 
 def generate_individual_svgs(repos: list):
+    import glob
     SVG_W = 440
     CARD_H = 168
     defs = build_defs()
