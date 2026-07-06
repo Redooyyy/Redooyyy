@@ -1,75 +1,72 @@
-<!-- Typing animation -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+learner+who's+still+learning" alt="Typing SVG" />
-</p>
+<div align="center">
+  <img src="assets/banner.svg" alt="Banner" width="100%" />
+</div>
 
-<!-- Glitchy banner -->
-<p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHc3NzYwc3VjY2FmZGU3Z3E1dzB0emZzN2pobXI3ZnVqemNqMHNtbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" alt="Glitch Banner" width="600px" />
-</p>
+<div align="center">
+  <a href="https://github.com/Redooyyy">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=A+learner+who's+still+learning" alt="Typing SVG" />
+  </a>
+</div>
 
-<h1 align="center">Hey I'm Redoy :) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" /></h1>
-<p align="center"><i>Crafting backend spells, decoding algorithms, and sketching emotions in pixels.</i></p>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" width="100%" />
+</div>
 
-<hr/>
+### Tech Arsenal
 
-### 🧠 Tech Arsenal
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,dart,flutter,spring,mysql,mongodb,firebase,neovim,linux,git&theme=dark" alt="Skills" />
+</div>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,dart,flutter,spring,mysql,mongodb,firebase,neovim,linux,git" />
-</p>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" width="100%" />
+</div>
 
-<hr/>
+### Featured Builds
 
-### 🧩 Featured Builds
+| Project | Description | Role |
+| :--- | :--- | :---: |
+| [**floatbar-nvim**](https://github.com/Redooyyy/floatbar-nvim) | A floating terminal inside neovim that remembers buffers seamlessly | `Lua` `Neovim` |
+| [**flutter-deps**](https://github.com/Redooyyy/flutter-deps) | A Neovim plugin for adding pub dependencies in your flutter project | `Lua` `Flutter` |
+| [**waybar**](https://github.com/Redooyyy/waybar) | A custom, aesthetic statusbar configured for my personal Linux setup | `CSS` `JSON` |
 
-| Project         | Description                                                         |
-| --------------- | ------------------------------------------------------------------- |
-| `floatbar-nvim` | A floating terminal inside neovim (remebers buffers)                |
-| `flutter-deps`  | A Neovim plugin for adding pub dependencies in your flutter project |
-| `waybar`        | A custom statusbar for my usage -\_-(Avalable 'Reo-s-config')       |
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" width="100%" />
+</div>
 
-<hr/>
+### GitHub Metrics
 
-### 📈 GitHub Metrics
+<div align="center">
+  <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=dark&hide_border=true&background=0a0a0f&ring=00F7FF&fire=00F7FF&currStreakNum=ffffff" alt="GitHub Streak" />
+</div>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=transparent&hide_border=true" alt="GitHub Streak" />
-</p>
+<br/>
 
-![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true)
-![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs?username=Redooyyy&layout=compact&theme=transparent&hide_border=true)
+<div align="center">
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=00F7FF&icon_color=00F7FF&text_color=ffffff" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=Redooyyy&layout=compact&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=00F7FF&text_color=ffffff" alt="Top Languages" width="48%" />
+</div>
 
-<hr/>
+<div align="center">
+  <img src="assets/divider.svg" alt="divider" width="100%" />
+</div>
 
-### 🧬 Code Flow
+### Connect with Me
 
-<p align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyN2t2Z2xtcjA0Nng4cXk0cGxwd2lsNmRxOXdlNnp0NDJoZ2tqaXRoeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="Code Flow Animation" alt = "" width="500px" />
-</p>
+<div align="center">
+  <a href="https://www.linkedin.com/in/Redooyyy">
+    <img src="https://img.shields.io/badge/LinkedIn-0a0a0f?logo=linkedin&logoColor=00F7FF&style=for-the-badge&border=1px" alt="LinkedIn" />
+  </a>
+  <a href="https://www.facebook.com/Redooyyy">
+    <img src="https://img.shields.io/badge/Facebook-0a0a0f?logo=facebook&logoColor=00F7FF&style=for-the-badge&border=1px" alt="Facebook" />
+  </a>
+  <a href="https://discordapp.com/users/Redooyyy">
+    <img src="https://img.shields.io/badge/Discord-0a0a0f?logo=discord&logoColor=00F7FF&style=for-the-badge&border=1px" alt="Discord" />
+  </a>
+</div>
 
-<hr/>
+<br/>
 
-### 📝 Poetic Bytes
-
-> “I write in silence,  
-> where logic meets longing—  
-> and every bug is a metaphor.”
-
-<hr/>
-
-### 🌐 Connect with Me
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/Redooyyy"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" /></a>
-  <a href="https://www.facebook.com/Redooyyy"><img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white&style=for-the-badge" /></a>
-  <a href="https://discordapp.com/users/Redooyyy"><img src="https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white&style=for-the-badge" /></a>
-</p>
-
-<hr/>
-
-### 🌀 Visitor Counter
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Visitors&color=00F7FF&style=flat-square" />
-</p>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Redooyyy&label=Visitors&color=00F7FF&style=flat-square" alt="Visitors" />
+</div>
