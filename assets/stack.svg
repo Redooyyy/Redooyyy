@@ -1,0 +1,207 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Row accent colors -->
+    <linearGradient id="accentLang"     x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#C084FC"/><stop offset="100%" stop-color="#818CF8"/></linearGradient>
+    <linearGradient id="accentBack"     x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#0EA5E9"/></linearGradient>
+    <linearGradient id="accentMobile"   x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+    <linearGradient id="accentEditor"   x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#4ADE80"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+    <linearGradient id="accentShell"    x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
+    <linearGradient id="accentWorkflow" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F472B6"/><stop offset="100%" stop-color="#EC4899"/></linearGradient>
+
+    <!-- Row bg gradients (subtle left glow per color) -->
+    <linearGradient id="rowGlowLang"     x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#818CF8" stop-opacity="0.12"/><stop offset="35%" stop-color="#818CF8" stop-opacity="0.04"/><stop offset="100%" stop-color="#818CF8" stop-opacity="0"/></linearGradient>
+    <linearGradient id="rowGlowBack"     x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12"/><stop offset="35%" stop-color="#38BDF8" stop-opacity="0.04"/><stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/></linearGradient>
+    <linearGradient id="rowGlowMobile"   x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#22D3EE" stop-opacity="0.12"/><stop offset="35%" stop-color="#22D3EE" stop-opacity="0.04"/><stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/></linearGradient>
+    <linearGradient id="rowGlowEditor"   x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#4ADE80" stop-opacity="0.12"/><stop offset="35%" stop-color="#4ADE80" stop-opacity="0.04"/><stop offset="100%" stop-color="#4ADE80" stop-opacity="0"/></linearGradient>
+    <linearGradient id="rowGlowShell"    x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FBBF24" stop-opacity="0.12"/><stop offset="35%" stop-color="#FBBF24" stop-opacity="0.04"/><stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/></linearGradient>
+    <linearGradient id="rowGlowWorkflow" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F472B6" stop-opacity="0.12"/><stop offset="35%" stop-color="#F472B6" stop-opacity="0.04"/><stop offset="100%" stop-color="#F472B6" stop-opacity="0"/></linearGradient>
+
+    <!-- Outer border -->
+    <linearGradient id="outerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#C084FC" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Header title gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#C084FC"/>
+      <stop offset="50%"  stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+
+    <style>
+      @keyframes breathe1 { 0%,100%{opacity:.5} 50%{opacity:.9} }
+      @keyframes breathe2 { 0%,100%{opacity:.4} 50%{opacity:.8} }
+      @keyframes breathe3 { 0%,100%{opacity:.45} 50%{opacity:.85} }
+      @keyframes scan { 0%{transform:translateY(60px);opacity:.04} 100%{transform:translateY(395px);opacity:0} }
+      @keyframes dash { to{stroke-dashoffset:-20} }
+      .b1{animation:breathe1 4s ease-in-out infinite}
+      .b2{animation:breathe2 5s ease-in-out infinite}
+      .b3{animation:breathe3 6s ease-in-out infinite}
+      .scan{animation:scan 5s linear infinite}
+      .march{animation:dash 1.8s linear infinite}
+    </style>
+  </defs>
+
+  <!-- Outer container -->
+  <rect x="2" y="2" width="896" height="416" rx="16" fill="#0d1117" fill-opacity="0.55"/>
+  <rect x="2" y="2" width="896" height="416" rx="16" fill="none" stroke="url(#outerBorder)" stroke-width="1.5" class="b1" filter="url(#softGlow)"/>
+
+  <!-- Scanline sweep -->
+  <rect class="scan" x="4" y="0" width="892" height="22" rx="0" fill="#818CF8" opacity="1"/>
+
+  <!-- Header section -->
+  <rect x="2" y="2" width="896" height="52" rx="16" fill="#161b22" fill-opacity="0.85"/>
+  <rect x="2" y="42" width="896" height="12" fill="#161b22" fill-opacity="0.85"/>
+
+  <!-- Header dots -->
+  <circle cx="24" cy="28" r="5" fill="#FF5F57" opacity="0.9"/>
+  <circle cx="42" cy="28" r="5" fill="#FFBD2E" opacity="0.9"/>
+  <circle cx="60" cy="28" r="5" fill="#28C840" opacity="0.9"/>
+
+  <!-- Header title -->
+  <text x="450" y="33" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700"
+        fill="url(#titleGrad)" text-anchor="middle" letter-spacing="4" filter="url(#softGlow)">
+    TECH  STACK
+  </text>
+
+  <!-- Marching border top under header -->
+  <line x1="80" y1="52" x2="820" y2="52" stroke="#818CF8" stroke-width="0.6"
+        stroke-dasharray="4 4" opacity="0.3" class="march"/>
+
+  <!-- ═══════════════════════════════════════════
+       ROW 1 — Languages  y=60
+  ════════════════════════════════════════════ -->
+  <rect x="14" y="60" width="872" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
+  <rect x="14" y="60" width="872" height="52" rx="10" fill="url(#rowGlowLang)"/>
+  <rect x="14" y="60" width="872" height="52" rx="10" fill="none" stroke="#818CF8" stroke-width="0.8" opacity="0.2"/>
+  <!-- Accent bar -->
+  <rect x="14" y="60" width="4" height="52" rx="2" fill="url(#accentLang)" filter="url(#softGlow)" class="b1"/>
+  <!-- Label -->
+  <text x="36" y="91" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#C084FC">Languages</text>
+  <!-- Pills -->
+  <!-- C -->
+  <rect x="148" y="72" width="28" height="22" rx="6" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="162" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#818CF8" text-anchor="middle">C</text>
+  <!-- C++ -->
+  <rect x="182" y="72" width="36" height="22" rx="6" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="200" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#818CF8" text-anchor="middle">C++</text>
+  <!-- Java -->
+  <rect x="224" y="72" width="40" height="22" rx="6" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="244" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#818CF8" text-anchor="middle">Java</text>
+  <!-- Dart -->
+  <rect x="270" y="72" width="38" height="22" rx="6" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="289" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#818CF8" text-anchor="middle">Dart</text>
+  <!-- Lua -->
+  <rect x="314" y="72" width="36" height="22" rx="6" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="332" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#818CF8" text-anchor="middle">Lua</text>
+  <!-- Bash -->
+  <rect x="356" y="72" width="38" height="22" rx="6" fill="#818CF8" fill-opacity="0.15" stroke="#818CF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="375" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#818CF8" text-anchor="middle">Bash</text>
+
+  <!-- ═══════════════════════════════════════════
+       ROW 2 — Backend  y=120
+  ════════════════════════════════════════════ -->
+  <rect x="14" y="120" width="872" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
+  <rect x="14" y="120" width="872" height="52" rx="10" fill="url(#rowGlowBack)"/>
+  <rect x="14" y="120" width="872" height="52" rx="10" fill="none" stroke="#38BDF8" stroke-width="0.8" opacity="0.2"/>
+  <rect x="14" y="120" width="4" height="52" rx="2" fill="url(#accentBack)" filter="url(#softGlow)" class="b2"/>
+  <text x="36" y="151" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#38BDF8">Backend</text>
+  <!-- Spring Boot -->
+  <rect x="148" y="132" width="88" height="22" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="192" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#38BDF8" text-anchor="middle">Spring Boot</text>
+  <!-- MySQL -->
+  <rect x="242" y="132" width="50" height="22" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="267" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#38BDF8" text-anchor="middle">MySQL</text>
+  <!-- MongoDB -->
+  <rect x="298" y="132" width="66" height="22" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="331" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#38BDF8" text-anchor="middle">MongoDB</text>
+  <!-- Firebase -->
+  <rect x="370" y="132" width="62" height="22" rx="6" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="401" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#38BDF8" text-anchor="middle">Firebase</text>
+
+  <!-- ═══════════════════════════════════════════
+       ROW 3 — Mobile  y=180
+  ════════════════════════════════════════════ -->
+  <rect x="14" y="180" width="872" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
+  <rect x="14" y="180" width="872" height="52" rx="10" fill="url(#rowGlowMobile)"/>
+  <rect x="14" y="180" width="872" height="52" rx="10" fill="none" stroke="#22D3EE" stroke-width="0.8" opacity="0.2"/>
+  <rect x="14" y="180" width="4" height="52" rx="2" fill="url(#accentMobile)" filter="url(#softGlow)" class="b3"/>
+  <text x="36" y="211" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#22D3EE">Mobile</text>
+  <!-- Flutter -->
+  <rect x="148" y="192" width="54" height="22" rx="6" fill="#22D3EE" fill-opacity="0.12" stroke="#22D3EE" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="175" y="207" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#22D3EE" text-anchor="middle">Flutter</text>
+  <!-- Dart -->
+  <rect x="208" y="192" width="38" height="22" rx="6" fill="#22D3EE" fill-opacity="0.12" stroke="#22D3EE" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="227" y="207" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#22D3EE" text-anchor="middle">Dart</text>
+
+  <!-- ═══════════════════════════════════════════
+       ROW 4 — Editor  y=240
+  ════════════════════════════════════════════ -->
+  <rect x="14" y="240" width="872" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
+  <rect x="14" y="240" width="872" height="52" rx="10" fill="url(#rowGlowEditor)"/>
+  <rect x="14" y="240" width="872" height="52" rx="10" fill="none" stroke="#4ADE80" stroke-width="0.8" opacity="0.2"/>
+  <rect x="14" y="240" width="4" height="52" rx="2" fill="url(#accentEditor)" filter="url(#softGlow)" class="b1"/>
+  <text x="36" y="271" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#4ADE80">Editor</text>
+  <!-- Neovim -->
+  <rect x="148" y="252" width="58" height="22" rx="6" fill="#4ADE80" fill-opacity="0.12" stroke="#4ADE80" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="177" y="267" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#4ADE80" text-anchor="middle">Neovim</text>
+  <!-- IntelliJ -->
+  <rect x="212" y="252" width="58" height="22" rx="6" fill="#4ADE80" fill-opacity="0.12" stroke="#4ADE80" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="241" y="267" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#4ADE80" text-anchor="middle">IntelliJ</text>
+  <!-- VS Code -->
+  <rect x="276" y="252" width="60" height="22" rx="6" fill="#4ADE80" fill-opacity="0.12" stroke="#4ADE80" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="306" y="267" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#4ADE80" text-anchor="middle">VS Code</text>
+
+  <!-- ═══════════════════════════════════════════
+       ROW 5 — Shell  y=300
+  ════════════════════════════════════════════ -->
+  <rect x="14" y="300" width="872" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
+  <rect x="14" y="300" width="872" height="52" rx="10" fill="url(#rowGlowShell)"/>
+  <rect x="14" y="300" width="872" height="52" rx="10" fill="none" stroke="#FBBF24" stroke-width="0.8" opacity="0.2"/>
+  <rect x="14" y="300" width="4" height="52" rx="2" fill="url(#accentShell)" filter="url(#softGlow)" class="b2"/>
+  <text x="36" y="331" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#FBBF24">Shell</text>
+  <!-- Nix -->
+  <rect x="148" y="312" width="34" height="22" rx="6" fill="#FBBF24" fill-opacity="0.12" stroke="#FBBF24" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="165" y="327" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#FBBF24" text-anchor="middle">Nix</text>
+  <!-- Caelestia Shell -->
+  <rect x="188" y="312" width="116" height="22" rx="6" fill="#FBBF24" fill-opacity="0.12" stroke="#FBBF24" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="246" y="327" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#FBBF24" text-anchor="middle">Caelestia Shell</text>
+  <!-- Custom scripts -->
+  <rect x="310" y="312" width="104" height="22" rx="6" fill="#FBBF24" fill-opacity="0.12" stroke="#FBBF24" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="362" y="327" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#FBBF24" text-anchor="middle">Custom scripts</text>
+
+  <!-- ═══════════════════════════════════════════
+       ROW 6 — Workflow  y=360
+  ════════════════════════════════════════════ -->
+  <rect x="14" y="360" width="872" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
+  <rect x="14" y="360" width="872" height="52" rx="10" fill="url(#rowGlowWorkflow)"/>
+  <rect x="14" y="360" width="872" height="52" rx="10" fill="none" stroke="#F472B6" stroke-width="0.8" opacity="0.2"/>
+  <rect x="14" y="360" width="4" height="52" rx="2" fill="url(#accentWorkflow)" filter="url(#softGlow)" class="b3"/>
+  <text x="36" y="391" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#F472B6">Workflow</text>
+  <!-- cli-yt -->
+  <rect x="148" y="372" width="46" height="22" rx="6" fill="#F472B6" fill-opacity="0.12" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="171" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#F472B6" text-anchor="middle">cli-yt</text>
+  <!-- music fetch -->
+  <rect x="200" y="372" width="86" height="22" rx="6" fill="#F472B6" fill-opacity="0.12" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="243" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#F472B6" text-anchor="middle">music fetch</text>
+  <!-- Hyprland -->
+  <rect x="292" y="372" width="68" height="22" rx="6" fill="#F472B6" fill-opacity="0.12" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="326" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#F472B6" text-anchor="middle">Hyprland</text>
+  <!-- Dotfiles -->
+  <rect x="366" y="372" width="60" height="22" rx="6" fill="#F472B6" fill-opacity="0.12" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="396" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#F472B6" text-anchor="middle">Dotfiles</text>
+  <!-- Git -->
+  <rect x="432" y="372" width="36" height="22" rx="6" fill="#F472B6" fill-opacity="0.12" stroke="#F472B6" stroke-width="0.7" stroke-opacity="0.5"/>
+  <text x="450" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#F472B6" text-anchor="middle">Git</text>
+</svg>

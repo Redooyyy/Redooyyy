@@ -1,0 +1,26 @@
+<svg width="900" height="20" viewBox="0 0 900 20" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#C084FC" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#818CF8" stop-opacity="0.9"/>
+      <stop offset="50%"  stop-color="#38BDF8" stop-opacity="1"/>
+      <stop offset="75%"  stop-color="#818CF8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+    <style>
+      @keyframes shimmer {
+        0%   { opacity: 0.5; }
+        50%  { opacity: 1.0; }
+        100% { opacity: 0.5; }
+      }
+      .line { animation: shimmer 4s ease-in-out infinite; }
+    </style>
+  </defs>
+  <line class="line" x1="0" y1="10" x2="900" y2="10"
+        stroke="url(#g)" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="450" cy="10" r="3" fill="#38BDF8" filter="url(#glow)" class="line"/>
+</svg>
