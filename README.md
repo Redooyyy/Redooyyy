@@ -170,19 +170,19 @@
 
 <div align="center">
   <a href="https://www.linkedin.com/in/Redooyyy">
-    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=818CF8" alt="LinkedIn"/>
+    <img src="assets/contact-linkedin.svg" alt="LinkedIn"/>
   </a>
   &nbsp;
   <a href="https://www.facebook.com/Redooyyy">
-    <img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=818CF8" alt="Facebook"/>
+    <img src="assets/contact-facebook.svg" alt="Facebook"/>
   </a>
   &nbsp;
   <a href="https://discordapp.com/users/Redooyyy">
-    <img src="https://img.shields.io/badge/Discord-0d1117?style=for-the-badge&logo=discord&logoColor=818CF8" alt="Discord"/>
+    <img src="assets/contact-discord.svg" alt="Discord"/>
   </a>
   &nbsp;
   <a href="https://github.com/Redooyyy">
-    <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=818CF8" alt="GitHub"/>
+    <img src="assets/contact-github.svg" alt="GitHub"/>
   </a>
 </div>
 
