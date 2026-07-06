@@ -12,8 +12,7 @@ def get_svg_path(name):
     return paths.get(name, "")
 
 def generate_button(name):
-    # Width adjusts slightly based on name length
-    w = 140 + len(name) * 8
+    w = 110 + len(name) * 8
     h = 44
     path = get_svg_path(name)
     
@@ -48,11 +47,11 @@ def generate_button(name):
   <!-- Glowing border -->
   <rect x="2" y="2" width="{w-4}" height="{h-4}" rx="12" fill="none" stroke="url(#glow)" stroke-width="1.5" filter="url(#blur)" class="b"/>
   
-  <g transform="translate(24, 10)">
+  <g transform="translate(16, 10)">
     <path d="{path}" fill="#E2E8F0" transform="scale(0.9)"/>
   </g>
   
-  <text x="60" y="27" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#E2E8F0" letter-spacing="1">{name.upper()}</text>
+  <text x="48" y="27" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#E2E8F0" letter-spacing="1">{name.upper()}</text>
 </svg>"""
     return svg
 
