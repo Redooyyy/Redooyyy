@@ -79,72 +79,17 @@
 <br/>
 
 <div align="center">
+  <img src="assets/builds.svg" width="100%" alt="Featured Builds"/>
+</div>
 
-<table width="92%">
-<tr>
-<td align="left" valign="top" width="50%">
+<div align="center">
 
-**[flutter-deps.nvim](https://github.com/Redooyyy/flutter-deps.nvim)** &nbsp;
-![stars](https://img.shields.io/github/stars/Redooyyy/flutter-deps.nvim?style=flat&color=818CF8&labelColor=0d1117&label=stars)
-
-Fuzzy-find and add pub.dev dependencies to your Flutter project — version picker included. No browser. No copy-paste. Just flow.
-
-`Lua` &nbsp; `Neovim` &nbsp; `Flutter`
-
-</td>
-<td align="left" valign="top" width="50%">
-
-**[floatbar-nvim](https://github.com/Redooyyy/floatbar-nvim)** &nbsp;
-![stars](https://img.shields.io/github/stars/Redooyyy/floatbar-nvim?style=flat&color=818CF8&labelColor=0d1117&label=stars)
-
-A floating, persistent terminal panel inside Neovim that actually remembers what you were doing. Context stays, distractions don't.
-
-`Lua` &nbsp; `Neovim` &nbsp; `Terminal`
-
-</td>
-</tr>
-<tr>
-<td align="left" valign="top">
-
-**[F.L.O.R.A](https://github.com/Redooyyy/F.L.O.R.A)**
-
-A Java project — because sometimes you build something and let the name do the talking. The name is an acronym. The code does the rest.
-
-`Java`
-
-</td>
-<td align="left" valign="top">
-
-**[Reoo-s-Dev-Env](https://github.com/Redooyyy/Reoo-s-Dev-Env)**
-
-My entire development environment, scripted and version-controlled. Because a developer's environment is as personal as their handwriting.
-
-`Lua` &nbsp; `Shell`
-
-</td>
-</tr>
-<tr>
-<td align="left" valign="top">
-
-**[nvim-reo-sticky](https://github.com/Redooyyy/nvim-reo-sticky)**
-
-Sticky notes inside Neovim. Because sometimes the best TODO manager is the one you never have to leave your editor to use.
-
-`Lua` &nbsp; `Neovim`
-
-</td>
-<td align="left" valign="top">
-
-**[Reoo-s-Dotfiles](https://github.com/Redooyyy/Reoo-s-Dotfiles)** &nbsp;
-![stars](https://img.shields.io/github/stars/Redooyyy/Reoo-s-Dotfiles?style=flat&color=818CF8&labelColor=0d1117&label=stars)
-
-My Linux dotfiles — Hyprland, Waybar, Neovim, everything. The desktop is a canvas. This is my art.
-
-`Lua` &nbsp; `CSS` &nbsp; `JSON`
-
-</td>
-</tr>
-</table>
+[flutter-deps.nvim](https://github.com/Redooyyy/flutter-deps.nvim) &nbsp;|&nbsp;
+[floatbar-nvim](https://github.com/Redooyyy/floatbar-nvim) &nbsp;|&nbsp;
+[F.L.O.R.A](https://github.com/Redooyyy/F.L.O.R.A) &nbsp;|&nbsp;
+[Reoo-s-Dev-Env](https://github.com/Redooyyy/Reoo-s-Dev-Env) &nbsp;|&nbsp;
+[nvim-reo-sticky](https://github.com/Redooyyy/nvim-reo-sticky) &nbsp;|&nbsp;
+[Reoo-s-Dotfiles](https://github.com/Redooyyy/Reoo-s-Dotfiles)
 
 </div>
 
