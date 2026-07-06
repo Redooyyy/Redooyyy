@@ -24,30 +24,19 @@ OUTPUT_PATH = "assets/builds.svg"
 MAX_REPOS   = 6   # GitHub allows up to 6 pinned repos
 # ─────────────────────────────────────────────
 
-# Language name → pill accent color
+# Language name → pill accent color (Monochrome / Slate / Subtle Blue)
 LANG_COLORS = {
-    "Lua":        "#818CF8",
-    "Java":       "#F59E0B",
-    "Dart":       "#22D3EE",
-    "Flutter":    "#22D3EE",
-    "Python":     "#3B82F6",
-    "JavaScript": "#EAB308",
-    "TypeScript": "#38BDF8",
-    "C":          "#94A3B8",
-    "C++":        "#A78BFA",
-    "Rust":       "#F97316",
-    "Go":         "#34D399",
-    "Shell":      "#34D399",
-    "Bash":       "#34D399",
-    "CSS":        "#C084FC",
-    "HTML":       "#F87171",
-    "QML":        "#FBBF24",
-    "Nix":        "#FBBF24",
-    "Kotlin":     "#A78BFA",
-    "Swift":      "#FB923C",
-    "Ruby":       "#EF4444",
-    "PHP":        "#818CF8",
     "default":    "#64748B",
+    "Java":       "#64748B",
+    "CSS":        "#64748B",
+    "Lua":        "#64748B",
+    "Shell":      "#64748B",
+    "TypeScript": "#64748B",
+    "Dart":       "#64748B",
+    "Flutter":    "#64748B",
+    "Python":     "#64748B",
+    "C":          "#64748B",
+    "C++":        "#64748B",
 }
 
 GRAPHQL_QUERY = """
