@@ -2,15 +2,15 @@
   <defs>
     <!-- Soft Aurora Gradients -->
     <radialGradient id="aurora1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aurora2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="aurora3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.12"/>
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
@@ -22,23 +22,23 @@
 
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#94A3B8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#94A3B8" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
 
     <style>
       @keyframes drift1 {
-        0% { transform: translate(0, 0); }
-        50% { transform: translate(40px, -20px); }
-        100% { transform: translate(0, 0); }
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(60px, -40px) scale(1.1); }
+        100% { transform: translate(0, 0) scale(1); }
       }
       @keyframes drift2 {
-        0% { transform: translate(0, 0); }
-        50% { transform: translate(-40px, 30px); }
-        100% { transform: translate(0, 0); }
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(-60px, 40px) scale(1.15); }
+        100% { transform: translate(0, 0) scale(1); }
       }
-      .a1 { animation: drift1 18s ease-in-out infinite; }
-      .a2 { animation: drift2 22s ease-in-out infinite; }
+      .a1 { animation: drift1 8s ease-in-out infinite; }
+      .a2 { animation: drift2 12s ease-in-out infinite; }
     </style>
   </defs>
 
