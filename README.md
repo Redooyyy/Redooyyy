@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/header.svg" width="100%" alt="Redoy"/>
+  <img src="assets/header.svg" alt="Redoy"/>
 </div>
 
 <br/>
@@ -21,7 +21,7 @@
 <!--  WHO AM I  -->
 
 <div align="center">
-  <img src="assets/whoami.svg" width="75%" alt="whoami"/>
+  <img src="assets/whoami.svg" alt="whoami"/>
 </div>
 
 <br/>
@@ -52,7 +52,7 @@
 <br/>
 
 <div align="center">
-  <img src="assets/stack.svg" width="100%" alt="Tech Stack"/>
+  <img src="assets/stack.svg" alt="Tech Stack"/>
 </div>
 
 <br/>

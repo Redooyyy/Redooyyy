@@ -278,7 +278,7 @@ def update_readme(generated: list):
         
     new_section = [start_marker, '<div align="center">']
     for idx, item in enumerate(generated):
-        link = f'<a href="{item["url"]}"><img src="{item["path"]}" width="48%" alt="Build {idx+1}"/></a>'
+        link = f'<a href="{item["url"]}"><img src="{item["path"]}" width="400" alt="Build {idx+1}"/></a>'
         new_section.append(link)
         if idx % 2 == 1:
             new_section.append('</div>\n<div align="center">')
