@@ -144,13 +144,12 @@
 <div align="center">
 <br/>
 
-> *Most people wait for the right moment.*
-> *I make the moment right.*
-
-<br/>
-
-> *The terminal is where I think clearly.*
-> *The code is where I speak honestly.*
+> *The screen is black, the text is clear,*
+> *A quiet focus settles here.*
+> *Where errors fall and bugs are caught,*
+> *And code is built from silent thought.*
+> *No heavy words, no loud display,*
+> *Just typing out a better way.*
 
 <br/>
 </div>
