@@ -1,142 +1,98 @@
 <svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Professional soft glow palette -->
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#818CF8"/>
-    </linearGradient>
-    <linearGradient id="tagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"  stop-color="#94A3B8"/>
-      <stop offset="100%" stop-color="#CBD5E1"/>
-    </linearGradient>
-    
-    <!-- Soft, elegant glowing orbs (Brightened) -->
-    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    <!-- Soft Aurora Gradients -->
+    <radialGradient id="aurora1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#818CF8" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    <radialGradient id="aurora2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#2DD4BF" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"/>
+    <radialGradient id="aurora3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feComposite in="SourceGraphic" in2="b" operator="over"/>
-    </filter>
-    <filter id="subtleGlow">
-      <feGaussianBlur stdDeviation="2" result="b"/>
-      <feComposite in="SourceGraphic" in2="b" operator="over"/>
-    </filter>
+    <!-- Sleek Silver/White Gradient for Name -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#94A3B8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
 
     <style>
-      @keyframes floatA {
-        0%   { transform: translate(0px,   0px)  scale(1.00); }
-        50%  { transform: translate(12px, -15px) scale(1.02); }
-        100% { transform: translate(0px,   0px)  scale(1.00); }
+      @keyframes drift1 {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(40px, -20px); }
+        100% { transform: translate(0, 0); }
       }
-      @keyframes floatB {
-        0%   { transform: translate(0px,   0px)  scale(1.00); }
-        50%  { transform: translate(-10px, 12px) scale(1.03); }
-        100% { transform: translate(0px,   0px)  scale(1.00); }
+      @keyframes drift2 {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(-40px, 30px); }
+        100% { transform: translate(0, 0); }
       }
-      @keyframes floatC {
-        0%   { transform: translate(0px, 0px)   scale(1.00); }
-        50%  { transform: translate(8px, 10px) scale(0.98); }
-        100% { transform: translate(0px, 0px)   scale(1.00); }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.3; }
-        50%       { opacity: 0.7; }
-      }
-      @keyframes dash {
-        to { stroke-dashoffset: -30; }
-      }
-      .orb1 { animation: floatA 12s ease-in-out infinite; }
-      .orb2 { animation: floatB 15s ease-in-out infinite; }
-      .orb3 { animation: floatC 10s ease-in-out infinite; }
-      .blink { animation: pulse 4s ease-in-out infinite; }
-      .march { animation: dash 3s linear infinite; }
+      .a1 { animation: drift1 18s ease-in-out infinite; }
+      .a2 { animation: drift2 22s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Ambient orbs -->
-  <circle class="orb1" cx="70"   cy="160" r="120" fill="url(#orb1)"/>
-  <circle class="orb2" cx="530"  cy="160" r="130" fill="url(#orb2)"/>
-  <circle class="orb3" cx="300"  cy="60"  r="90"  fill="url(#orb3)"/>
+  <!-- Ambient background blobs -->
+  <circle class="a1" cx="150" cy="160" r="220" fill="url(#aurora1)"/>
+  <circle class="a2" cx="450" cy="160" r="220" fill="url(#aurora2)"/>
+  <circle class="a1" cx="300" cy="60"  r="200" fill="url(#aurora3)"/>
 
-  <!-- Grid dot pattern (very muted slate) -->
-  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="0.8" fill="#475569" opacity="0.15"/>
+  <!-- Minimalist grid (Very subtle) -->
+  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.02" stroke-width="1"/>
   </pattern>
-  <rect width="600" height="320" fill="url(#dots)"/>
-
-  <!-- Marching dashed border — top & bottom accent -->
-  <line x1="40" y1="38" x2="560" y2="38"
-        stroke="#475569" stroke-width="1" stroke-dasharray="6 6"
-        stroke-dashoffset="0" opacity="0.4" class="march"/>
-  <line x1="40" y1="282" x2="560" y2="282"
-        stroke="#475569" stroke-width="1" stroke-dasharray="6 6"
-        stroke-dashoffset="0" opacity="0.4" class="march"/>
-
-  <!-- Corner bracket accents (sleek slate/blue) -->
-  <polyline points="40,60  40,38  62,38"  fill="none" stroke="#64748B" stroke-width="2" opacity="0.7"/>
-  <polyline points="538,38 560,38 560,60" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.7"/>
-  <polyline points="40,262  40,282  62,282"  fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.7"/>
-  <polyline points="538,282 560,282 560,262" fill="none" stroke="#64748B" stroke-width="2" opacity="0.7"/>
-
-  <!-- Floating micro-particles (subdued) -->
-  <circle cx="220" cy="55"  r="1.8" fill="#94A3B8" class="blink"/>
-  <circle cx="480" cy="55"  r="1.5" fill="#64748B" class="blink"/>
-  <circle cx="140" cy="270" r="1.8" fill="#3B82F6" class="blink"/>
-  <circle cx="455" cy="270" r="2.0" fill="#94A3B8" class="blink"/>
-  <circle cx="300" cy="290" r="1.5" fill="#64748B" class="blink"/>
-  <circle cx="75"  cy="160" r="1.5" fill="#3B82F6" class="blink"/>
-  <circle cx="525" cy="130" r="1.5" fill="#64748B" class="blink"/>
+  <rect width="600" height="320" fill="url(#grid)"/>
 
   <!-- Main name -->
-  <text x="300" y="145"
-        font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="64" font-weight="700"
-        fill="url(#nameGrad)"
+  <text x="300" y="150"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="76" font-weight="800"
+        fill="url(#textGrad)"
         text-anchor="middle"
-        letter-spacing="-1"
-        filter="url(#glow)">
+        letter-spacing="-1.5">
     Redoy
   </text>
 
   <!-- Handle -->
-  <text x="300" y="180"
-        font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="14" font-weight="500"
+  <text x="300" y="184"
+        font-family="'JetBrains Mono', 'Courier New', monospace"
+        font-size="13" font-weight="400"
         fill="#64748B"
         text-anchor="middle"
-        letter-spacing="4">
+        letter-spacing="3">
     @Redooyyy
   </text>
 
+  <!-- Elegant Divider Line -->
+  <rect x="200" y="215" width="200" height="1" fill="url(#lineGrad)"/>
+
   <!-- Tagline -->
-  <text x="300" y="225"
-        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
-        font-size="16" font-weight="400"
-        fill="url(#tagGrad)"
+  <text x="300" y="250"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="15" font-weight="400"
+        fill="#E2E8F0"
         text-anchor="middle"
-        letter-spacing="1.5">
+        letter-spacing="0.5">
     Not waiting for opportunity — building it.
   </text>
 
   <!-- Sub-tagline / descriptor -->
-  <text x="300" y="258"
-        font-family="'Georgia',serif"
-        font-size="13" font-weight="400"
+  <text x="300" y="280"
+        font-family="'JetBrains Mono', 'Courier New', monospace"
+        font-size="11.5" font-weight="400"
         fill="#475569"
         text-anchor="middle"
-        letter-spacing="0.8"
-        font-style="italic">
-    Backend  ·  Mobile  ·  Open Source  ·  Linux
+        letter-spacing="1">
+    Backend · Mobile · Open Source · Linux
   </text>
 </svg>
