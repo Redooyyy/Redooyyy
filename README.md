@@ -144,12 +144,12 @@
 <div align="center">
 <br/>
 
-> *The screen is black, the text is clear,*
-> *A quiet focus settles here.*
-> *Where errors fall and bugs are caught,*
-> *And code is built from silent thought.*
-> *No heavy words, no loud display,*
-> *Just typing out a better way.*
+> *The screen is black, the text is clear,* <br/>
+> *A quiet focus settles here.* <br/>
+> *Where errors fall and bugs are caught,* <br/>
+> *And code is built from silent thought.* <br/>
+> *No heavy words, no loud display,* <br/>
+> *Just typing out a better way.* <br/>
 
 <br/>
 </div>
