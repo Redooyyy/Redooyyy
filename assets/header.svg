@@ -1,107 +1,117 @@
-<svg width="600" height="320" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Modern Cyber LEDs -->
-    <radialGradient id="ledBlue" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    <!-- Soft floating aurora orbs -->
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="ledPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#0EA5E9" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Metallic/Chrome Text Gradient -->
+    <!-- Chrome name gradient -->
     <linearGradient id="chrome" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="45%" stop-color="#F1F5F9"/>
-      <stop offset="50%" stop-color="#94A3B8"/>
-      <stop offset="100%" stop-color="#64748B"/>
+      <stop offset="40%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
     </linearGradient>
 
-    <!-- Pill Border Gradient -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.8"/>
+    <!-- Subtle divider -->
+    <linearGradient id="div" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6366F1" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#0EA5E9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Glowing Text Filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="8"/>
+    <!-- Glow filter for name -->
+    <filter id="nameGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <!-- Blueprint Grid -->
-    <pattern id="blueprint" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
-      <circle cx="30" cy="30" r="1.5" fill="#FFFFFF" fill-opacity="0.15"/>
-    </pattern>
-
     <style>
-      @keyframes breathe {
-        0%, 100% { transform: scale(1); opacity: 0.8; }
-        50% { transform: scale(1.15); opacity: 1; }
+      @keyframes float1 {
+        0%,100% { transform: translate(0px, 0px) scale(1); }
+        33%      { transform: translate(30px, -25px) scale(1.08); }
+        66%      { transform: translate(-20px, 15px) scale(0.96); }
       }
-      @keyframes breathe-alt {
-        0%, 100% { transform: scale(1.15); opacity: 1; }
-        50% { transform: scale(1); opacity: 0.8; }
+      @keyframes float2 {
+        0%,100% { transform: translate(0px, 0px) scale(1); }
+        33%      { transform: translate(-35px, 20px) scale(1.1); }
+        66%      { transform: translate(25px, -15px) scale(0.95); }
       }
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.3; }
+      @keyframes float3 {
+        0%,100% { transform: translate(0px, 0px) scale(1); }
+        50%      { transform: translate(15px, -30px) scale(1.05); }
       }
-      .g1 { animation: breathe 8s ease-in-out infinite; transform-origin: center; }
-      .g2 { animation: breathe-alt 10s ease-in-out infinite; transform-origin: center; }
-      .bl { animation: blink 2s ease-in-out infinite; }
+      @keyframes fadein {
+        0%   { opacity: 0; transform: translateY(8px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .o1 { animation: float1 9s ease-in-out infinite; transform-origin: 150px 130px; }
+      .o2 { animation: float2 12s ease-in-out infinite; transform-origin: 450px 160px; }
+      .o3 { animation: float3 7s ease-in-out infinite; transform-origin: 300px 80px; }
     </style>
   </defs>
 
-  <!-- Deep background LEDs -->
-  <circle class="g1" cx="150" cy="120" r="220" fill="url(#ledBlue)"/>
-  <circle class="g2" cx="450" cy="200" r="220" fill="url(#ledPurple)"/>
+  <!-- Transparent base — NO background rect, pure glass -->
 
-  <!-- Grid overlay -->
-  <rect width="600" height="320" fill="url(#blueprint)"/>
+  <!-- Drifting aurora blobs -->
+  <circle class="o1" cx="150" cy="130" r="200" fill="url(#g1)"/>
+  <circle class="o2" cx="450" cy="160" r="210" fill="url(#g2)"/>
+  <circle class="o3" cx="300" cy="90"  r="160" fill="url(#g3)"/>
 
-  <!-- Modern Structural Frame (Fully transparent) -->
-  <rect x="20" y="20" width="560" height="280" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
-  <line x1="20" y1="220" x2="580" y2="220" stroke="#334155" stroke-width="1"/>
-  
-  <!-- Frame Accents (Crosshairs) -->
-  <path d="M 12 20 L 28 20 M 20 12 L 20 28" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M 572 20 L 588 20 M 580 12 L 580 28" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M 12 300 L 28 300 M 20 292 L 20 308" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M 572 300 L 588 300 M 580 292 L 580 308" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round"/>
-  
-  <!-- Status pill (top left) -->
-  <rect x="40" y="40" width="68" height="22" rx="11" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-  <circle cx="52" cy="51" r="3.5" fill="#10B981" class="bl"/>
-  <text x="62" y="55" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#94A3B8">SYS.OK</text>
+  <!-- Name glow shadow layer -->
+  <text x="300" y="148"
+        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+        font-size="88" font-weight="900"
+        fill="#6366F1"
+        text-anchor="middle"
+        letter-spacing="-3"
+        opacity="0.45"
+        filter="url(#nameGlow)">Redoy</text>
 
-  <!-- Version pill (top right) -->
-  <rect x="495" y="40" width="65" height="22" rx="11" fill="#1E293B" stroke="#475569" stroke-width="1"/>
-  <text x="527" y="55" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#94A3B8" text-anchor="middle">v2.0.0</text>
+  <!-- Name crisp layer -->
+  <text x="300" y="148"
+        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+        font-size="88" font-weight="900"
+        fill="url(#chrome)"
+        text-anchor="middle"
+        letter-spacing="-3">Redoy</text>
 
-  <!-- Main name (Glowing shadow) -->
-  <text x="300" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="84" font-weight="900" fill="#3B82F6" text-anchor="middle" letter-spacing="-3" opacity="0.5" filter="url(#glow)">
-    Redoy
-  </text>
-  
-  <!-- Main name (Chrome effect) -->
-  <text x="300" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="84" font-weight="900" fill="url(#chrome)" text-anchor="middle" letter-spacing="-3">
-    Redoy
-  </text>
+  <!-- Handle — monospace, very muted -->
+  <text x="300" y="178"
+        font-family="'JetBrains Mono','Courier New',monospace"
+        font-size="12.5" font-weight="400"
+        fill="#64748B"
+        text-anchor="middle"
+        letter-spacing="3.5">@Redooyyy</text>
 
-  <!-- Handle / Identity Pill -->
-  <rect x="240" y="165" width="120" height="28" rx="14" fill="#0F172A" stroke="url(#borderGrad)" stroke-width="1"/>
-  <text x="300" y="184" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500" fill="#E2E8F0" text-anchor="middle" letter-spacing="1.5">
-    @Redooyyy
-  </text>
+  <!-- Glowing thin divider line -->
+  <rect x="210" y="206" width="180" height="1" fill="url(#div)"/>
 
-  <!-- Bottom Section (Tagline & Tech) -->
-  <text x="300" y="255" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#F8FAFC" text-anchor="middle" letter-spacing="0.5">
-    Not waiting for opportunity — building it.
-  </text>
-  
-  <text x="300" y="282" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="500" fill="#94A3B8" text-anchor="middle" letter-spacing="2.5">
-    BACKEND // MOBILE // OPEN SOURCE // LINUX
-  </text>
+  <!-- Tagline -->
+  <text x="300" y="235"
+        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+        font-size="15.5" font-weight="500"
+        fill="#CBD5E1"
+        text-anchor="middle"
+        letter-spacing="0.3">Not waiting for opportunity — building it.</text>
+
+  <!-- Tech stack -->
+  <text x="300" y="265"
+        font-family="'JetBrains Mono','Courier New',monospace"
+        font-size="10.5" font-weight="400"
+        fill="#475569"
+        text-anchor="middle"
+        letter-spacing="2">BACKEND · MOBILE · OPEN SOURCE · LINUX</text>
 </svg>
