@@ -105,7 +105,6 @@
   <img
     src="https://github-readme-streak-stats-salesp07.vercel.app/?user=Redooyyy&theme=transparent&hide_border=true&stroke=818CF8&ring=C084FC&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=818CF8&dates=475569&currStreakNum=F8FAFC&sideNums=E2E8F0"
     alt="Streak"
-    width="68%"
   />
 </div>
 
@@ -115,13 +114,11 @@
   <img
     src="https://github-readme-stats-fast.vercel.app/api?username=Redooyyy&show_icons=true&theme=transparent&hide_border=true&title_color=818CF8&icon_color=C084FC&text_color=CBD5E1&ring_color=38BDF8"
     alt="Stats"
-    width="47%"
   />
   &nbsp;
   <img
     src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Redooyyy&layout=compact&theme=transparent&hide_border=true&title_color=818CF8&text_color=CBD5E1&langs_count=8"
     alt="Top Languages"
-    width="40%"
   />
 </div>
 
@@ -131,7 +128,6 @@
   <img
     src="https://github-readme-activity-graph.vercel.app/graph?username=Redooyyy&bg_color=00000000&color=818CF8&line=C084FC&point=38BDF8&area=true&area_color=818CF8&hide_border=true&radius=6"
     alt="Activity Graph"
-    width="90%"
   />
 </div>
 
