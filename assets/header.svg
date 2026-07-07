@@ -1,117 +1,155 @@
-<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="260" viewBox="0 0 600 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Soft floating aurora orbs -->
-    <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.15"/>
+
+    <!-- Corner glows (stay at edges, center stays transparent) -->
+    <radialGradient id="glowL" cx="0%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.5"/>
-      <stop offset="60%" stop-color="#0EA5E9" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4"/>
-      <stop offset="60%" stop-color="#8B5CF6" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    <radialGradient id="glowR" cx="100%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Chrome name gradient -->
-    <linearGradient id="chrome" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="40%" stop-color="#E2E8F0"/>
-      <stop offset="100%" stop-color="#94A3B8"/>
+    <!-- Soft name halo -->
+    <radialGradient id="nameHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Divider gradient -->
+    <linearGradient id="divLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#6366F1" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#818CF8" stop-opacity="0.8"/>
+      <stop offset="70%"  stop-color="#22D3EE" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Subtle divider -->
-    <linearGradient id="div" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#6366F1" stop-opacity="0.6"/>
-      <stop offset="70%" stop-color="#0EA5E9" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    <!-- Name shimmer sweep -->
+    <linearGradient id="shimmer" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="60%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        from="-600 0" to="600 0"
+        dur="4s" repeatCount="indefinite" begin="1.5s"/>
     </linearGradient>
 
-    <!-- Glow filter for name -->
-    <filter id="nameGlow" x="-20%" y="-40%" width="140%" height="180%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <!-- Clip the shimmer to the name shape -->
+    <clipPath id="nameClip">
+      <text x="300" y="130"
+            font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+            font-size="82" font-weight="300"
+            text-anchor="middle" letter-spacing="8">Redoy</text>
+    </clipPath>
 
     <style>
-      @keyframes float1 {
-        0%,100% { transform: translate(0px, 0px) scale(1); }
-        33%      { transform: translate(30px, -25px) scale(1.08); }
-        66%      { transform: translate(-20px, 15px) scale(0.96); }
+      @keyframes pulseL {
+        0%,100% { opacity: 0.55; }
+        50%      { opacity: 1;    }
       }
-      @keyframes float2 {
-        0%,100% { transform: translate(0px, 0px) scale(1); }
-        33%      { transform: translate(-35px, 20px) scale(1.1); }
-        66%      { transform: translate(25px, -15px) scale(0.95); }
+      @keyframes pulseR {
+        0%,100% { opacity: 1;    }
+        50%      { opacity: 0.45; }
       }
-      @keyframes float3 {
-        0%,100% { transform: translate(0px, 0px) scale(1); }
-        50%      { transform: translate(15px, -30px) scale(1.05); }
+      @keyframes divBreathe {
+        0%,100% { opacity: 0.4; }
+        50%      { opacity: 1;   }
       }
-      @keyframes fadein {
-        0%   { opacity: 0; transform: translateY(8px); }
-        100% { opacity: 1; transform: translateY(0); }
+      @keyframes dot1 {
+        0%,100% { opacity: 0.15; r: 2;   }
+        50%      { opacity: 1;    r: 3.2; }
       }
-      .o1 { animation: float1 9s ease-in-out infinite; transform-origin: 150px 130px; }
-      .o2 { animation: float2 12s ease-in-out infinite; transform-origin: 450px 160px; }
-      .o3 { animation: float3 7s ease-in-out infinite; transform-origin: 300px 80px; }
+      @keyframes dot2 {
+        0%,100% { opacity: 1;    r: 1.5; }
+        50%      { opacity: 0.15; r: 2.5; }
+      }
+      @keyframes dot3 {
+        0%,100% { opacity: 0.2;  r: 1.5; }
+        50%      { opacity: 0.9;  r: 2.5; }
+      }
+      @keyframes dot4 {
+        0%,100% { opacity: 0.8;  r: 2;   }
+        50%      { opacity: 0.15; r: 3;   }
+      }
+      @keyframes nameIn {
+        0%   { opacity: 0; transform: translateY(12px); }
+        100% { opacity: 1; transform: translateY(0);    }
+      }
+      @keyframes subIn {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .gL  { animation: pulseL    7s ease-in-out infinite; }
+      .gR  { animation: pulseR    9s ease-in-out infinite; }
+      .div { animation: divBreathe 4s ease-in-out infinite; }
+      .d1  { animation: dot1 3.1s ease-in-out infinite; }
+      .d2  { animation: dot2 4.5s ease-in-out 1s infinite; }
+      .d3  { animation: dot3 2.8s ease-in-out 0.5s infinite; }
+      .d4  { animation: dot4 3.9s ease-in-out 1.8s infinite; }
+      .nameGroup  { animation: nameIn 0.9s cubic-bezier(0.22,1,0.36,1) both; }
+      .handleText { animation: subIn 0.7s ease both 0.5s; opacity: 0; animation-fill-mode: forwards; }
+      .tagText    { animation: subIn 0.7s ease both 0.85s; opacity: 0; animation-fill-mode: forwards; }
+      .techText   { animation: subIn 0.7s ease both 1.1s; opacity: 0; animation-fill-mode: forwards; }
     </style>
   </defs>
 
-  <!-- Transparent base — NO background rect, pure glass -->
+  <!-- Corner glows ONLY — center transparent -->
+  <rect class="gL" x="0"   y="0" width="220" height="220" fill="url(#glowL)"/>
+  <rect class="gR" x="380" y="0" width="220" height="220" fill="url(#glowR)"/>
 
-  <!-- Drifting aurora blobs -->
-  <circle class="o1" cx="150" cy="130" r="200" fill="url(#g1)"/>
-  <circle class="o2" cx="450" cy="160" r="210" fill="url(#g2)"/>
-  <circle class="o3" cx="300" cy="90"  r="160" fill="url(#g3)"/>
+  <!-- Faint name halo -->
+  <ellipse cx="300" cy="115" rx="175" ry="70" fill="url(#nameHalo)"/>
 
-  <!-- Name glow shadow layer -->
-  <text x="300" y="148"
-        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
-        font-size="88" font-weight="900"
-        fill="#6366F1"
-        text-anchor="middle"
-        letter-spacing="-3"
-        opacity="0.45"
-        filter="url(#nameGlow)">Redoy</text>
+  <!-- Micro dots — asymmetric, pulsing -->
+  <circle class="d1" cx="82"  cy="40"  r="2"   fill="#818CF8"/>
+  <circle class="d2" cx="518" cy="35"  r="1.5" fill="#22D3EE"/>
+  <circle class="d3" cx="40"  cy="215" r="1.5" fill="#6366F1"/>
+  <circle class="d4" cx="558" cy="220" r="2"   fill="#22D3EE"/>
 
-  <!-- Name crisp layer -->
-  <text x="300" y="148"
-        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
-        font-size="88" font-weight="900"
-        fill="url(#chrome)"
-        text-anchor="middle"
-        letter-spacing="-3">Redoy</text>
+  <!-- Name (animates in from below) -->
+  <g class="nameGroup">
+    <!-- Base name -->
+    <text x="300" y="130"
+          font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+          font-size="82" font-weight="300"
+          fill="#F8FAFC"
+          text-anchor="middle"
+          letter-spacing="8">Redoy</text>
 
-  <!-- Handle — monospace, very muted -->
-  <text x="300" y="178"
+    <!-- Shimmer sweep clipped to name shape -->
+    <rect x="0" y="60" width="600" height="100"
+          fill="url(#shimmer)"
+          clip-path="url(#nameClip)"/>
+  </g>
+
+  <!-- Handle fades in -->
+  <text class="handleText" x="300" y="158"
         font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="12.5" font-weight="400"
-        fill="#64748B"
-        text-anchor="middle"
-        letter-spacing="3.5">@Redooyyy</text>
-
-  <!-- Glowing thin divider line -->
-  <rect x="210" y="206" width="180" height="1" fill="url(#div)"/>
-
-  <!-- Tagline -->
-  <text x="300" y="235"
-        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
-        font-size="15.5" font-weight="500"
-        fill="#CBD5E1"
-        text-anchor="middle"
-        letter-spacing="0.3">Not waiting for opportunity — building it.</text>
-
-  <!-- Tech stack -->
-  <text x="300" y="265"
-        font-family="'JetBrains Mono','Courier New',monospace"
-        font-size="10.5" font-weight="400"
+        font-size="11" font-weight="400"
         fill="#475569"
         text-anchor="middle"
-        letter-spacing="2">BACKEND · MOBILE · OPEN SOURCE · LINUX</text>
+        letter-spacing="4">@Redooyyy</text>
+
+  <!-- Divider line — breathing -->
+  <rect class="div" x="180" y="178" width="240" height="1" fill="url(#divLine)"/>
+
+  <!-- Tagline fades in -->
+  <text class="tagText" x="300" y="205"
+        font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="13.5" font-weight="400"
+        fill="#94A3B8"
+        text-anchor="middle"
+        letter-spacing="0.5">Not waiting for opportunity — building it.</text>
+
+  <!-- Tech fades in last -->
+  <text class="techText" x="300" y="236"
+        font-family="'JetBrains Mono','Courier New',monospace"
+        font-size="9.5" font-weight="400"
+        fill="#334155"
+        text-anchor="middle"
+        letter-spacing="2.5">BACKEND · MOBILE · OPEN SOURCE · LINUX</text>
+
 </svg>
