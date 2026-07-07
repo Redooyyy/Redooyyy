@@ -71,19 +71,19 @@
 
 <!-- BUILDS START -->
 <div align="center">
-<a href="https://github.com/Redooyyy/flutter-deps.nvim"><img src="assets/build-0.svg" width="48%" alt="Build 1"/></a>
+<a href="https://github.com/Redooyyy/flutter-deps.nvim"><img src="assets/build-0.svg" width="400" alt="Build 1"/></a>
 &nbsp;
-<a href="https://github.com/Redooyyy/Reoo-s-Dev-Env"><img src="assets/build-1.svg" width="48%" alt="Build 2"/></a>
+<a href="https://github.com/Redooyyy/Reoo-s-Dev-Env"><img src="assets/build-1.svg" width="400" alt="Build 2"/></a>
 </div>
 <div align="center">
-<a href="https://github.com/Redooyyy/floatbar-nvim"><img src="assets/build-2.svg" width="48%" alt="Build 3"/></a>
+<a href="https://github.com/Redooyyy/floatbar-nvim"><img src="assets/build-2.svg" width="400" alt="Build 3"/></a>
 &nbsp;
-<a href="https://github.com/Redooyyy/Reoo-s-Dotfiles"><img src="assets/build-3.svg" width="48%" alt="Build 4"/></a>
+<a href="https://github.com/Redooyyy/Reoo-s-Dotfiles"><img src="assets/build-3.svg" width="400" alt="Build 4"/></a>
 </div>
 <div align="center">
-<a href="https://github.com/Redooyyy/F.L.O.R.A"><img src="assets/build-4.svg" width="48%" alt="Build 5"/></a>
+<a href="https://github.com/Redooyyy/F.L.O.R.A"><img src="assets/build-4.svg" width="400" alt="Build 5"/></a>
 &nbsp;
-<a href="https://github.com/Redooyyy/Hospital_Management_System"><img src="assets/build-5.svg" width="48%" alt="Build 6"/></a>
+<a href="https://github.com/Redooyyy/Hospital_Management_System"><img src="assets/build-5.svg" width="400" alt="Build 6"/></a>
 </div>
 <!-- BUILDS END -->
 
