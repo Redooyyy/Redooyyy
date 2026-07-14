@@ -182,6 +182,10 @@
   <a href="https://github.com/Redooyyy">
     <img src="assets/contact-github.svg" alt="GitHub"/>
   </a>
+  &nbsp;
+  <a href="mailto:rwarieal@gmail.com">
+    <img src="assets/contact-gmail.svg" alt="Gmail"/>
+  </a>
 </div>
 
 <br/>
