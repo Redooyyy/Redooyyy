@@ -184,7 +184,7 @@
   </a>
   &nbsp;
   <a href="mailto:rwarieal@gmail.com">
-    <img src="assets/contact-gmail.svg" alt="Gmail"/>
+    <img src="assets/contact-email.svg" alt="Gmail"/>
   </a>
 </div>
 
