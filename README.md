@@ -52,7 +52,7 @@
 <br/>
 
 <div align="center">
-  <img src="assets/stack.svg?v=7" alt="Tech Stack"/>
+  <img src="assets/stack.svg?v=8" alt="Tech Stack"/>
 </div>
 
 <br/>
