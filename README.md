@@ -40,11 +40,11 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=c,cpp,java&theme=dark" alt="C C++ Java"/>&nbsp;&nbsp;
-<img src="https://skillicons.dev/icons?i=dart,flutter&theme=dark" alt="Dart Flutter"/>&nbsp;&nbsp;
-<img src="https://skillicons.dev/icons?i=spring,mysql,mongodb,firebase&theme=dark" alt="Spring MySQL MongoDB Firebase"/>&nbsp;&nbsp;
-<img src="https://skillicons.dev/icons?i=lua,neovim,linux,git&theme=dark" alt="Lua Neovim Linux Git"/>&nbsp;&nbsp;
-<img src="https://skillicons.dev/icons?i=vscode,idea&theme=dark" alt="VS Code IntelliJ"/>
+<!-- <img src="https://skillicons.dev/icons?i=c,cpp,java&theme=dark" alt="C C++ Java"/>&nbsp;&nbsp; -->
+<!-- <img src="https://skillicons.dev/icons?i=dart,flutter&theme=dark" alt="Dart Flutter"/>&nbsp;&nbsp; -->
+<!-- <img src="https://skillicons.dev/icons?i=spring,mysql,mongodb,firebase&theme=dark" alt="Spring MySQL MongoDB Firebase"/>&nbsp;&nbsp; -->
+<!-- <img src="https://skillicons.dev/icons?i=lua,neovim,linux,git&theme=dark" alt="Lua Neovim Linux Git"/>&nbsp;&nbsp; -->
+<!-- <img src="https://skillicons.dev/icons?i=vscode,idea&theme=dark" alt="VS Code IntelliJ"/> -->
 
 </div>
 
@@ -144,12 +144,12 @@
 <div align="center">
 <br/>
 
-> *The screen is black, the text is clear,* <br/>
-> *A quiet focus settles here.* <br/>
-> *Where errors fall and bugs are caught,* <br/>
-> *And code is built from silent thought.* <br/>
-> *No heavy words, no loud display,* <br/>
-> *Just typing out a better way.* <br/>
+> _The screen is black, the text is clear,_ <br/>
+> _A quiet focus settles here._ <br/>
+> _Where errors fall and bugs are caught,_ <br/>
+> _And code is built from silent thought._ <br/>
+> _No heavy words, no loud display,_ <br/>
+> _Just typing out a better way._ <br/>
 
 <br/>
 </div>
