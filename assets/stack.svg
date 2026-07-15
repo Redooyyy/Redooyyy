@@ -1,194 +1,118 @@
-<svg width="520" height="420" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+<svg width="520" height="110" viewBox="0 0 520 110" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Professional soft glow row accents -->
-    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#818CF8"/>
-    </linearGradient>
-
-    <!-- Subtle background glows (Brightened) -->
-    <linearGradient id="rowGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.20"/>
-      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
-    </linearGradient>
-
-    <!-- Outer border -->
-    <linearGradient id="outerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="ob" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.7"/>
       <stop offset="50%"  stop-color="#1E293B" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#818CF8" stop-opacity="0.6"/>
     </linearGradient>
-
-    <!-- Header title gradient -->
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#94A3B8"/>
       <stop offset="100%" stop-color="#64748B"/>
     </linearGradient>
+    <!-- Fade masks at strip edges -->
+    <linearGradient id="fl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1"/>
+    </linearGradient>
 
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="1.5" result="b"/>
-      <feComposite in="SourceGraphic" in2="b" operator="over"/>
-    </filter>
+    <!-- Clip to visible strip area only -->
+    <clipPath id="mc">
+      <rect x="2" y="57" width="516" height="51"/>
+    </clipPath>
 
     <style>
+      /* One full set = 1870px. Animate by exactly that much for seamless loop. */
+      @keyframes scroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-1870px); }
+      }
       @keyframes breathe { 0%,100%{opacity:.5} 50%{opacity:.9} }
-      @keyframes scan { 0%{transform:translateY(60px);opacity:.02} 100%{transform:translateY(395px);opacity:0} }
-      @keyframes dash { to{stroke-dashoffset:-20} }
-      .b1{animation:breathe 4s ease-in-out infinite}
-      .b2{animation:breathe 5s ease-in-out infinite}
-      .b3{animation:breathe 6s ease-in-out infinite}
-      .scan{animation:scan 6s linear infinite}
-      .march{animation:dash 2.5s linear infinite}
+      .tr { animation: scroll 32s linear infinite; }
+      .bx { animation: breathe 4s ease-in-out infinite; }
     </style>
   </defs>
 
   <!-- Outer container -->
-  <rect x="2" y="2" width="896" height="416" rx="16" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="2" y="2" width="896" height="416" rx="16" fill="none" stroke="url(#outerBorder)" stroke-width="1.5" class="b1" filter="url(#softGlow)"/>
+  <rect x="2" y="2" width="516" height="106" rx="14" fill="#0d1117" fill-opacity="0.85"/>
+  <rect x="2" y="2" width="516" height="106" rx="14" fill="none" stroke="url(#ob)" stroke-width="1.5" class="bx"/>
 
-  <!-- Scanline sweep -->
-  <rect class="scan" x="4" y="0" width="892" height="22" rx="0" fill="#94A3B8" opacity="1"/>
+  <!-- Header bar -->
+  <rect x="2"  y="2"  width="516" height="52" rx="14" fill="#161b22" fill-opacity="0.95"/>
+  <rect x="2"  y="40" width="516" height="14" fill="#161b22" fill-opacity="0.95"/>
+  <line x1="2" y1="53" x2="518" y2="53" stroke="#334155" stroke-width="1" opacity="0.6"/>
 
-  <!-- Header section -->
-  <rect x="2" y="2" width="896" height="52" rx="16" fill="#161b22" fill-opacity="0.8"/>
-  <rect x="2" y="42" width="896" height="12" fill="#161b22" fill-opacity="0.8"/>
-
-  <!-- Header dots (macOS muted) -->
+  <!-- macOS dots -->
   <circle cx="24" cy="28" r="5" fill="#EF4444" opacity="0.8"/>
   <circle cx="42" cy="28" r="5" fill="#F59E0B" opacity="0.8"/>
   <circle cx="60" cy="28" r="5" fill="#10B981" opacity="0.8"/>
 
-  <!-- Header title -->
-  <text x="260" y="33" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700"
-        fill="url(#titleGrad)" text-anchor="middle" letter-spacing="4" filter="url(#softGlow)">
-    TECH  STACK
-  </text>
+  <!-- Title -->
+  <text x="260" y="33"
+        font-family="'JetBrains Mono','Courier New',monospace"
+        font-size="13" font-weight="700"
+        fill="url(#tg)" text-anchor="middle" letter-spacing="4">TECH  STACK</text>
 
-  <!-- Marching border top under header -->
-  <line x1="80" y1="52" x2="480" y2="52" stroke="#475569" stroke-width="0.6"
-        stroke-dasharray="4 4" opacity="0.4" class="march"/>
+  <!-- ── Scrolling pill marquee ── -->
+  <g clip-path="url(#mc)">
+    <g class="tr">
 
-  <!-- ═══════════════════════════════════════════
-       ROW 1 — Languages  y=60
-  ════════════════════════════════════════════ -->
-  <rect x="14" y="60" width="490" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="14" y="60" width="490" height="52" rx="10" fill="url(#rowGlow)"/>
-  <rect x="14" y="60" width="490" height="52" rx="10" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
-  <rect x="14" y="60" width="4" height="52" rx="2" fill="url(#accent)" class="b1"/>
-  <text x="36" y="91" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#94A3B8">Languages</text>
-  
-  <rect x="148" y="72" width="28" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="162" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">C</text>
-  
-  <rect x="182" y="72" width="36" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="200" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">C++</text>
-  
-  <rect x="224" y="72" width="40" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="244" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Java</text>
-  
-  <rect x="270" y="72" width="38" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="289" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dart</text>
-  
-  <rect x="314" y="72" width="36" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="332" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Lua</text>
-  
-  <rect x="356" y="72" width="38" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="375" y="87" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Bash</text>
+      <!-- ═══ SET 1 ═══ (x starts at 10, pill_y=71, text_y=88, pill_h=26) -->
+      <rect x="10"   y="71" width="32"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="26"   y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">C</text>
+      <rect x="56"   y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="79"   y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">C++</text>
+      <rect x="116"  y="71" width="52"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="142"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Java</text>
+      <rect x="182"  y="71" width="52"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="208"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dart</text>
+      <rect x="248"  y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="271"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Lua</text>
+      <rect x="308"  y="71" width="52"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="334"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Bash</text>
+      <rect x="374"  y="71" width="102" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="425"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Spring Boot</text>
+      <rect x="490"  y="71" width="60"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="520"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">MySQL</text>
+      <rect x="564"  y="71" width="74"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="601"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">MongoDB</text>
+      <rect x="652"  y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="692"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Firebase</text>
+      <rect x="746"  y="71" width="74"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="783"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Flutter</text>
+      <rect x="834"  y="71" width="66"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="867"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Neovim</text>
+      <rect x="914"  y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="954"  y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">IntelliJ</text>
+      <rect x="1008" y="71" width="74"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1045" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">VS Code</text>
+      <rect x="1096" y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1119" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Nix</text>
+      <rect x="1156" y="71" width="130" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1221" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Caelestia Shell</text>
+      <rect x="1300" y="71" width="122" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1361" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Custom scripts</text>
+      <rect x="1436" y="71" width="66"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1469" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">cli-yt</text>
+      <rect x="1516" y="71" width="102" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1567" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">music fetch</text>
+      <rect x="1632" y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1672" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Hyprland</text>
+      <rect x="1726" y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1766" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dotfiles</text>
+      <rect x="1820" y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1843" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Git</text>
 
-  <!-- ═══════════════════════════════════════════
-       ROW 2 — Backend  y=120
-  ════════════════════════════════════════════ -->
-  <rect x="14" y="120" width="490" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="14" y="120" width="490" height="52" rx="10" fill="url(#rowGlow)"/>
-  <rect x="14" y="120" width="490" height="52" rx="10" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
-  <rect x="14" y="120" width="4" height="52" rx="2" fill="url(#accent)" class="b2"/>
-  <text x="36" y="151" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#94A3B8">Backend</text>
-  
-  <rect x="148" y="132" width="88" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="192" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Spring Boot</text>
-  
-  <rect x="242" y="132" width="50" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="267" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">MySQL</text>
-  
-  <rect x="298" y="132" width="66" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="331" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">MongoDB</text>
-  
-  <rect x="370" y="132" width="62" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="401" y="147" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Firebase</text>
+      <!-- ═══ SET 2 ═══ (each x = original + 1870 for seamless loop) -->
+      <rect x="1880" y="71" width="32"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1896" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">C</text>
+      <rect x="1926" y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="1949" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">C++</text>
+      <rect x="1986" y="71" width="52"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2012" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Java</text>
+      <rect x="2052" y="71" width="52"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2078" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dart</text>
+      <rect x="2118" y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2141" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Lua</text>
+      <rect x="2178" y="71" width="52"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2204" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Bash</text>
+      <rect x="2244" y="71" width="102" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2295" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Spring Boot</text>
+      <rect x="2360" y="71" width="60"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2390" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">MySQL</text>
+      <rect x="2434" y="71" width="74"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2471" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">MongoDB</text>
+      <rect x="2522" y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2562" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Firebase</text>
+      <rect x="2616" y="71" width="74"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2653" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Flutter</text>
+      <rect x="2704" y="71" width="66"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2737" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Neovim</text>
+      <rect x="2784" y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2824" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">IntelliJ</text>
+      <rect x="2878" y="71" width="74"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2915" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">VS Code</text>
+      <rect x="2966" y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="2989" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Nix</text>
+      <rect x="3026" y="71" width="130" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3091" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Caelestia Shell</text>
+      <rect x="3170" y="71" width="122" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3231" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Custom scripts</text>
+      <rect x="3306" y="71" width="66"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3339" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">cli-yt</text>
+      <rect x="3386" y="71" width="102" height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3437" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">music fetch</text>
+      <rect x="3502" y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3542" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Hyprland</text>
+      <rect x="3596" y="71" width="80"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3636" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dotfiles</text>
+      <rect x="3690" y="71" width="46"  height="26" rx="6" fill="#334155" fill-opacity="0.45" stroke="#475569" stroke-width="0.7"/><text x="3713" y="88" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Git</text>
 
-  <!-- ═══════════════════════════════════════════
-       ROW 3 — Mobile  y=180
-  ════════════════════════════════════════════ -->
-  <rect x="14" y="180" width="490" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="14" y="180" width="490" height="52" rx="10" fill="url(#rowGlow)"/>
-  <rect x="14" y="180" width="490" height="52" rx="10" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
-  <rect x="14" y="180" width="4" height="52" rx="2" fill="url(#accent)" class="b3"/>
-  <text x="36" y="211" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#94A3B8">Mobile</text>
-  
-  <rect x="148" y="192" width="54" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="175" y="207" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Flutter</text>
-  
-  <rect x="208" y="192" width="38" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="227" y="207" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dart</text>
+    </g>
+  </g>
 
-  <!-- ═══════════════════════════════════════════
-       ROW 4 — Editor  y=240
-  ════════════════════════════════════════════ -->
-  <rect x="14" y="240" width="490" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="14" y="240" width="490" height="52" rx="10" fill="url(#rowGlow)"/>
-  <rect x="14" y="240" width="490" height="52" rx="10" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
-  <rect x="14" y="240" width="4" height="52" rx="2" fill="url(#accent)" class="b1"/>
-  <text x="36" y="271" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#94A3B8">Editor</text>
-  
-  <rect x="148" y="252" width="58" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="177" y="267" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Neovim</text>
-  
-  <rect x="212" y="252" width="58" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="241" y="267" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">IntelliJ</text>
-  
-  <rect x="276" y="252" width="60" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="306" y="267" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">VS Code</text>
+  <!-- Edge fades — overlay on top of pills for smooth disappear effect -->
+  <rect x="2"   y="57" width="52" height="51" fill="url(#fl)"/>
+  <rect x="466" y="57" width="52" height="51" fill="url(#fr)"/>
 
-  <!-- ═══════════════════════════════════════════
-       ROW 5 — Shell  y=300
-  ════════════════════════════════════════════ -->
-  <rect x="14" y="300" width="490" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="14" y="300" width="490" height="52" rx="10" fill="url(#rowGlow)"/>
-  <rect x="14" y="300" width="490" height="52" rx="10" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
-  <rect x="14" y="300" width="4" height="52" rx="2" fill="url(#accent)" class="b2"/>
-  <text x="36" y="331" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#94A3B8">Shell</text>
-  
-  <rect x="148" y="312" width="34" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="165" y="327" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Nix</text>
-  
-  <rect x="188" y="312" width="116" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="246" y="327" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Caelestia Shell</text>
-  
-  <rect x="310" y="312" width="104" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="362" y="327" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Custom scripts</text>
-
-  <!-- ═══════════════════════════════════════════
-       ROW 6 — Workflow  y=360
-  ════════════════════════════════════════════ -->
-  <rect x="14" y="360" width="490" height="52" rx="10" fill="#0d1117" fill-opacity="0.6"/>
-  <rect x="14" y="360" width="490" height="52" rx="10" fill="url(#rowGlow)"/>
-  <rect x="14" y="360" width="490" height="52" rx="10" fill="none" stroke="#334155" stroke-width="1" opacity="0.5"/>
-  <rect x="14" y="360" width="4" height="52" rx="2" fill="url(#accent)" class="b3"/>
-  <text x="36" y="391" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" font-weight="700" fill="#94A3B8">Workflow</text>
-  
-  <rect x="148" y="372" width="46" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="171" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">cli-yt</text>
-  
-  <rect x="200" y="372" width="86" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="243" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">music fetch</text>
-  
-  <rect x="292" y="372" width="68" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="326" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Hyprland</text>
-  
-  <rect x="366" y="372" width="60" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="396" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Dotfiles</text>
-  
-  <rect x="432" y="372" width="36" height="22" rx="6" fill="#334155" fill-opacity="0.4" stroke="#475569" stroke-width="0.7"/>
-  <text x="450" y="387" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#E2E8F0" text-anchor="middle">Git</text>
 </svg>
